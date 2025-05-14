@@ -1,0 +1,137 @@
+@prefix ex:     <http://example.com/cars#>.
+@prefix rr:     <http://www.w3.org/ns/r2rml#>.
+@prefix ql:     <http://semweb.mmlab.be/ns/ql#>.
+@prefix schema: <http://schema.org/>.
+@prefix dc:     <http://purl.org/dc/terms/>.
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#>.
+@prefix rml:    <http://semweb.mmlab.be/ns/rml#>.
+@prefix domain: <http://www.examples.org/cars#>.
+
+@base <http://example.com/cars>.
+
+# Convert each row of CSV into RDF triples
+<#CarMapping>
+    a                     rr:TriplesMap ;
+    rml:logigicalSource   [ rml:source               "car_data.csv" ;
+                            rml:referenceFormulation ql:CSV ] ;
+    rr:subjectMap         [ rr:template "http://example.com/cars/{Car_id}" ;
+                            rr:class    ex:Car ] ;
+    rr:predicateObjectMap [ rr:predicate ex:hasCustomer ;
+                            rr:objectMap [ rml:template "http://example.com/customer/{Customer Name}" ] ] ;
+    rr:predicateObjectMap [ rr:predicate ex:soldBy ;
+                            rr:objectMap [ rml:template "http://example.com/dealer/{Dealer_Name}" ] ] ;
+    rr:predicateObjectMap [ rr:predicate ex:hasModel ;
+                            rr:objectMap [ rml:template "http://example.com/car_model/{Model}" ] ] ;
+    rr:predicateObjectMap [ rr:predicate ex:hasEngine ;
+                            rr:objectMap [ rml:template "http://example.com/engine/{Engine}" ] ] ;
+    rr:predicateObjectMap [ rr:predicate ex:hasTransmission ;
+                            rr:objectMap [ rml:template "http://example.com/transmission/{Transmission}" ] ] ;
+    rr:predicateObjectMap [ rr:predicate ex:hasColor ;
+                            rr:objectMap [ rml:template "http://example.com/color/{Color}" ] ] ;
+    rr:predicateObjectMap [ rr:predicate ex:hasBodyStyle ;
+                            rr:objectMap [ rml:template "http://example.com/body_style/{Body Style}" ] ] ;
+    rr:predicateObjectMap [ rr:predicate ex:carId ;
+                            rr:objectMap [ rml:reference "Car_id" ;
+                                           rr:datatype   xsd:string ] ] ;
+    rr:predicateObjectMap [ rr:predicate ex:saleDate ;
+                            rr:objectMap [ rml:reference "Date" ;
+                                           rr:datatype   xsd:date ] ] ;
+    rr:predicateObjectMap [ rr:predicate ex:priceUSD ;
+                            rr:objectMap [ rml:reference "Price ($)" ;
+                                           rr:datatype   xsd:float ] ] .
+
+<#CustomerMapping>
+    a                     rr:TriplesMap ;
+    rml:logigicalSource   [ rml:source               "car_data.csv" ;
+                            rml:referenceFormulation ql:CSV ] ;
+    rr:subjectMap         [ rr:template "http://example.com/customer/{Customer Name}" ;
+                            rr:class    ex:Customer ] ;
+    rr:predicateObjectMap [ rr:predicate ex:customerName ;
+                            rr:objectMap [ rml:reference "Customer Name" ;
+                                           rr:datatype   xsd:string ] ] ;
+    rr:predicateObjectMap [ rr:predicate ex:customerName ;
+                            rr:objectMap [ rml:reference "Customer Name" ;
+                                           rr:datatype   xsd:string ] ] ;
+    rr:predicateObjectMap [ rr:predicate ex:gender ;
+                            rr:objectMap [ rml:reference "Gender" ;
+                                           rr:datatype   xsd:string ] ] ;
+    rr:predicateObjectMap [ rr:predicate ex:annualIncome ;
+                            rr:objectMap [ rml:reference "Annual Income" ;
+                                           rr:datatype   xsd:float ] ] ;
+    rr:predicateObjectMap [ rr:predicate ex:annualIncome ;
+                            rr:objectMap [ rml:reference "Annual Income" ;
+                                           rr:datatype   xsd:float ] ] .
+
+<#EngineMapping>
+    a                   rr:TriplesMap ;
+    rml:logigicalSource [ rml:source               "car_data.csv" ;
+                          rml:referenceFormulation ql:CSV ] ;
+    rr:subjectMap       [ rr:template "http://example.com/engine/{Engine}" ;
+                          rr:class    ex:Engine ] .
+
+<#TransmissionMapping>
+    a                   rr:TriplesMap ;
+    rml:logigicalSource [ rml:source               "car_data.csv" ;
+                          rml:referenceFormulation ql:CSV ] ;
+    rr:subjectMap       [ rr:template "http://example.com/transmission/{Transmission}" ;
+                          rr:class    ex:Transmission ] .
+
+<#BodyStyleMapping>
+    a                   rr:TriplesMap ;
+    rml:logigicalSource [ rml:source               "car_data.csv" ;
+                          rml:referenceFormulation ql:CSV ] ;
+    rr:subjectMap       [ rr:template "http://example.com/body_style/{Body Style}" ;
+                          rr:class    ex:BodyStyle ] .
+
+<#DealerMapping>
+    a                     rr:TriplesMap ;
+    rml:logigicalSource   [ rml:source               "car_data.csv" ;
+                            rml:referenceFormulation ql:CSV ] ;
+    rr:subjectMap         [ rr:template "http://example.com/dealer/{Dealer_Name}" ;
+                            rr:class    ex:Dealer ] ;
+    rr:predicateObjectMap [ rr:predicate ex:dealerName ;
+                            rr:objectMap [ rml:reference "Dealer_Name" ;
+                                           rr:datatype   xsd:string ] ] ;
+    rr:predicateObjectMap [ rr:predicate ex:dealerPhone ;
+                            rr:objectMap [ rml:reference "Phone " ;
+                                           rr:datatype   xsd:string ] ] ;
+    rr:predicateObjectMap [ rr:predicate ex:dealerNumber ;
+                            rr:objectMap [ rml:reference "Dealer_No  " ;
+                                           rr:datatype   xsd:string ] ] .
+
+<#CarModelMapping>
+    a                   rr:TriplesMap ;
+    rml:logigicalSource [ rml:source               "car_data.csv" ;
+                          rml:referenceFormulation ql:CSV ] ;
+    rr:subjectMap       [ rr:template "http://example.com/car_model/{Model}" ;
+                          rr:class    ex:CarModel ] .
+
+<#CarCompanyMapping>
+    a                   rr:TriplesMap ;
+    rml:logigicalSource [ rml:source               "car_data.csv" ;
+                          rml:referenceFormulation ql:CSV ] ;
+    rr:subjectMap       [ rr:template "http://example.com/car_company/{Company}" ;
+                          rr:class    ex:CarCompany ] .
+
+<#ColorMapping>
+    a                   rr:TriplesMap ;
+    rml:logigicalSource [ rml:source               "car_data.csv" ;
+                          rml:referenceFormulation ql:CSV ] ;
+    rr:subjectMap       [ rr:template "http://example.com/color/{Color}" ;
+                          rr:class    ex:Color ] .
+
+<#RegionMapping>
+    a                   rr:TriplesMap ;
+    rml:logigicalSource [ rml:source               "car_data.csv" ;
+                          rml:referenceFormulation ql:CSV ] ;
+    rr:subjectMap       [ rr:template "http://example.com/region/{Dealer_Region}" ;
+                          rr:class    ex:Region ] .
+
+
+
+
+
+
+
+
+
