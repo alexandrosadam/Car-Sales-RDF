@@ -59,14 +59,13 @@ LIMIT 3
 
 PREFIX ex: <http://example.com/cars#>
 
-SELECT ?dealer ?transmissionType (COUNT(?car) AS ?carCount)
+SELECT ?dealer 
+       (SUM(IF(LCASE(STRAFTER(STR(?transmission), "transmission/")) = "automatic", 1, 0)) AS ?AutoCarCount)
+       (SUM(IF(LCASE(STRAFTER(STR(?transmission), "transmission/")) = "manual", 1, 0)) AS ?ManualCarCount)
 WHERE {
   ?car a ex:Car ;
        ex:soldBy ?dealer ;
        ex:hasTransmission ?transmission .
-
-  ?transmission a ex:Transmission .
-  BIND(LCASE(STRAFTER(STR(?transmission), "transmission/")) AS ?transmissionType)
 }
-GROUP BY ?dealer ?transmissionType
-ORDER BY ?dealer ?transmissionType
+GROUP BY ?dealer
+ORDER BY DESC(?AutoCarCount)
