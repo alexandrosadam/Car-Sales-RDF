@@ -7,7 +7,7 @@
 @prefix rml:    <http://semweb.mmlab.be/ns/rml#>.
 @prefix domain: <http://www.examples.org/cars#>.
 
-@base <http://example.com/cars>.
+@base <http://example.com/cars/>.
 
 # Convert each row of CSV into RDF triples
 <#CarMapping>
