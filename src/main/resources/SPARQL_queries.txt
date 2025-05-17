@@ -54,7 +54,7 @@ ORDER BY DESC(?suvCount)
 LIMIT 3
 
 # ------------------------------------------------------------
-# Count of Manual vs Automatic cars sold per Dealer
+# Count the Manual vs Automatic cars sold per Dealer
 # ------------------------------------------------------------
 
 PREFIX ex: <http://example.com/cars#>
