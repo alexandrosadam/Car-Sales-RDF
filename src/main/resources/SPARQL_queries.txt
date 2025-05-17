@@ -1,1 +1,72 @@
+# ------------------------------------------------------------
+# Show all Ford cars sold
+# ------------------------------------------------------------
 
+PREFIX ex: <http://example.com/cars#>
+
+SELECT ?car ?carId ?saleDate ?price
+WHERE {
+  ?car a ex:Car ;
+       ex:carId ?carId ;
+       ex:saleDate ?saleDate ;
+       ex:priceUSD ?price ;
+       ex:hasModel ?model .
+
+  ?model ex:hasCompany <http://example.com/car_company/Ford> .
+}
+
+# ------------------------------------------------------------
+# Total sales($) per dealer
+# ------------------------------------------------------------
+
+PREFIX ex: <http://example.com/cars#>
+
+SELECT ?dealer ?dealerName (SUM(?price) AS ?totalSalesUSD)
+WHERE {
+  ?car a ex:Car ;
+       ex:soldBy ?dealer ;
+       ex:priceUSD ?price .
+
+  ?dealer ex:dealerName ?dealerName .
+}
+GROUP BY ?dealer ?dealerName
+ORDER BY DESC(?totalSalesUSD)
+
+# ------------------------------------------------------------
+# Show the top 3 Dealer Regions that sold the most SUV cars
+# ------------------------------------------------------------
+
+PREFIX ex: <http://example.com/cars#>
+
+SELECT ?region (COUNT(?car) AS ?suvCount)
+WHERE {
+  ?car a ex:Car ;
+       ex:hasBodyStyle ?bodyStyle ;
+       ex:soldBy ?dealer .
+
+  ?bodyStyle a ex:BodyStyle .
+  FILTER(CONTAINS(LCASE(STR(?bodyStyle)), "suv"))
+
+  ?dealer ex:locatedIn ?region .
+}
+GROUP BY ?region
+ORDER BY DESC(?suvCount)
+LIMIT 3
+
+# ------------------------------------------------------------
+# Count of Manual vs Automatic cars sold per Dealer
+# ------------------------------------------------------------
+
+PREFIX ex: <http://example.com/cars#>
+
+SELECT ?dealer ?transmissionType (COUNT(?car) AS ?carCount)
+WHERE {
+  ?car a ex:Car ;
+       ex:soldBy ?dealer ;
+       ex:hasTransmission ?transmission .
+
+  ?transmission a ex:Transmission .
+  BIND(LCASE(STRAFTER(STR(?transmission), "transmission/")) AS ?transmissionType)
+}
+GROUP BY ?dealer ?transmissionType
+ORDER BY ?dealer ?transmissionType
