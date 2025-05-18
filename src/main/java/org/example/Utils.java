@@ -9,10 +9,7 @@ import be.ugent.rml.store.QuadStoreFactory;
 import be.ugent.rml.store.RDF4JStore;
 import be.ugent.rml.term.NamedNode;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.InputStream;
-import java.io.Writer;
+import java.io.*;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -23,8 +20,10 @@ public class Utils {
         throw new UnsupportedOperationException("Utility class");
     }
 
-    public static void executeRMLMapper(File mappingFile, Writer outputFile) {
+    public static void executeRMLMapper(String mappingFilePath, String outputFilePath) {
         try {
+            File mappingFile = new File(mappingFilePath);
+            Writer outputMappingFile = new FileWriter(outputFilePath);
             // Get the mapping string stream
             InputStream mappingStream = new FileInputStream(mappingFile);
 
@@ -50,9 +49,8 @@ public class Utils {
             QuadStore result = executor.executeV5(null).get(new NamedNode("rmlmapper://default.store"));
 
             // Output the results in a file
-            result.write(outputFile, "turtle");
-            outputFile.close();
-
+            result.write(outputMappingFile, "turtle");
+            outputMappingFile.close();
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
