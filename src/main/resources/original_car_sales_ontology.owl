@@ -1,0 +1,111 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:ex="http://example.com/cars#">
+
+    <owl:Ontology rdf:about="http://example.com/cars"/>
+
+    <owl:Class rdf:about="ex:Car"/>
+    <owl:Class rdf:about="ex:Customer"/>
+    <owl:Class rdf:about="ex:Dealer"/>
+    <owl:Class rdf:about="ex:CarModel"/>
+    <owl:Class rdf:about="ex:CarCompany"/>
+    <owl:Class rdf:about="ex:Engine"/>
+    <owl:Class rdf:about="ex:Transmission"/>
+    <owl:Class rdf:about="ex:Color"/>
+    <owl:Class rdf:about="ex:BodyStyle"/>
+    <owl:Class rdf:about="ex:Region"/>
+
+    <owl:ObjectProperty rdf:about="ex:hasCustomer">
+        <rdfs:domain rdf:resource="ex:Car"/>
+        <rdfs:range rdf:resource="ex:Customer"/>
+    </owl:ObjectProperty>
+
+    <owl:ObjectProperty rdf:about="ex:soldBy">
+        <rdfs:domain rdf:resource="ex:Car"/>
+        <rdfs:range rdf:resource="ex:Dealer"/>
+    </owl:ObjectProperty>
+
+    <owl:ObjectProperty rdf:about="ex:hasModel">
+        <rdfs:domain rdf:resource="ex:Car"/>
+        <rdfs:range rdf:resource="ex:CarModel"/>
+    </owl:ObjectProperty>
+
+    <owl:ObjectProperty rdf:about="ex:hasCompany">
+        <rdfs:domain rdf:resource="ex:CarModel"/>
+        <rdfs:range rdf:resource="ex:CarCompany"/>
+    </owl:ObjectProperty>
+
+    <owl:ObjectProperty rdf:about="ex:hasEngine">
+        <rdfs:domain rdf:resource="ex:Car"/>
+        <rdfs:range rdf:resource="ex:Engine"/>
+    </owl:ObjectProperty>
+
+    <owl:ObjectProperty rdf:about="ex:hasTransmission">
+        <rdfs:domain rdf:resource="ex:Car"/>
+        <rdfs:range rdf:resource="ex:Transmission"/>
+    </owl:ObjectProperty>
+
+    <owl:ObjectProperty rdf:about="ex:hasColor">
+        <rdfs:domain rdf:resource="ex:Car"/>
+        <rdfs:range rdf:resource="ex:Color"/>
+    </owl:ObjectProperty>
+
+    <owl:ObjectProperty rdf:about="ex:hasBodyStyle">
+        <rdfs:domain rdf:resource="ex:Car"/>
+        <rdfs:range rdf:resource="ex:BodyStyle"/>
+    </owl:ObjectProperty>
+
+    <owl:ObjectProperty rdf:about="ex:locatedIn">
+        <rdfs:domain rdf:resource="ex:Dealer"/>
+        <rdfs:range rdf:resource="ex:Region"/>
+    </owl:ObjectProperty>
+
+    <!-- Data Properties -->
+    <owl:DatatypeProperty rdf:about="ex:carId">
+        <rdfs:domain rdf:resource="ex:Car"/>
+        <rdfs:range rdf:resource="xsd:string"/>
+    </owl:DatatypeProperty>
+
+    <owl:DatatypeProperty rdf:about="ex:saleDate">
+        <rdfs:domain rdf:resource="ex:Car"/>
+        <rdfs:range rdf:resource="xsd:date"/>
+    </owl:DatatypeProperty>
+
+    <owl:DatatypeProperty rdf:about="ex:priceUSD">
+        <rdfs:domain rdf:resource="ex:Car"/>
+        <rdfs:range rdf:resource="xsd:float"/>
+    </owl:DatatypeProperty>
+
+    <owl:DatatypeProperty rdf:about="ex:customerName">
+        <rdfs:domain rdf:resource="ex:Customer"/>
+        <rdfs:range rdf:resource="xsd:string"/>
+    </owl:DatatypeProperty>
+
+    <owl:DatatypeProperty rdf:about="ex:gender">
+        <rdfs:domain rdf:resource="ex:Customer"/>
+        <rdfs:range rdf:resource="xsd:string"/>
+    </owl:DatatypeProperty>
+
+    <owl:DatatypeProperty rdf:about="ex:annualIncome">
+        <rdfs:domain rdf:resource="ex:Customer"/>
+        <rdfs:range rdf:resource="xsd:float"/>
+    </owl:DatatypeProperty>
+
+    <owl:DatatypeProperty rdf:about="ex:dealerName">
+        <rdfs:domain rdf:resource="ex:Dealer"/>
+        <rdfs:range rdf:resource="xsd:string"/>
+    </owl:DatatypeProperty>
+
+    <owl:DatatypeProperty rdf:about="ex:dealerPhone">
+        <rdfs:domain rdf:resource="ex:Dealer"/>
+        <rdfs:range rdf:resource="xsd:string"/>
+    </owl:DatatypeProperty>
+
+    <owl:DatatypeProperty rdf:about="ex:dealerNumber">
+        <rdfs:domain rdf:resource="ex:Dealer"/>
+        <rdfs:range rdf:resource="xsd:string"/>
+    </owl:DatatypeProperty>
+
+</rdf:RDF>
