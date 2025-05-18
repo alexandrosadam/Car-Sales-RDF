@@ -69,307 +69,458 @@
 
 <http://example.com/car_company/Volvo> a <http://example.com/cars#CarCompany> .
 
-<http://example.com/car_model/3-Sep> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/3-Sep> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Saab> .
 
-<http://example.com/car_model/3000GT> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/3000GT> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Mitsubishi> .
 
-<http://example.com/car_model/300M> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/300M> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Chrysler> .
 
-<http://example.com/car_model/323i> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/323i> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/BMW> .
 
-<http://example.com/car_model/328i> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/328i> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/BMW> .
 
-<http://example.com/car_model/4Runner> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/4Runner> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Toyota> .
 
-<http://example.com/car_model/5-Sep> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/5-Sep> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Saab> .
 
-<http://example.com/car_model/528i> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/528i> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/BMW> .
 
-<http://example.com/car_model/A4> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/A4> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Audi> .
 
-<http://example.com/car_model/A6> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/A6> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Audi> .
 
-<http://example.com/car_model/A8> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/A8> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Audi> .
 
-<http://example.com/car_model/Accent> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/Accent> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Hyundai> .
 
-<http://example.com/car_model/Accord> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/Accord> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Honda> .
 
-<http://example.com/car_model/Alero> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/Alero> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Oldsmobile> .
 
-<http://example.com/car_model/Altima> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/Altima> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Nissan> .
 
-<http://example.com/car_model/Aurora> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/Aurora> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Oldsmobile> .
 
-<http://example.com/car_model/Avenger> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/Avenger> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Dodge> .
 
-<http://example.com/car_model/Beetle> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/Beetle> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Volkswagen> .
 
-<http://example.com/car_model/Bonneville> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/Bonneville> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Pontiac> .
 
-<http://example.com/car_model/Boxter> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/Boxter> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Porsche> .
 
-<http://example.com/car_model/Bravada> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/Bravada> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Oldsmobile> .
 
-<http://example.com/car_model/Breeze> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/Breeze> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Plymouth> .
 
-<http://example.com/car_model/C-Class> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/C-Class> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Mercedes-B> .
 
-<http://example.com/car_model/C70> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/C70> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Volvo> .
 
-<http://example.com/car_model/CL500> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/CL500> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Mercedes-B> .
 
-<http://example.com/car_model/CLK%20Coupe> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/CLK%20Coupe> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Mercedes-B> .
 
-<http://example.com/car_model/CR-V> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/CR-V> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Honda> .
 
-<http://example.com/car_model/Cabrio> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/Cabrio> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Volkswagen> .
 
-<http://example.com/car_model/Camaro> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/Camaro> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Chevrolet> .
 
-<http://example.com/car_model/Camry> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/Camry> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Toyota> .
 
-<http://example.com/car_model/Caravan> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/Caravan> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Dodge> .
 
-<http://example.com/car_model/Carrera%20Cabrio> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/Carrera%20Cabrio> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Porsche> .
 
-<http://example.com/car_model/Carrera%20Coupe> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/Carrera%20Coupe> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Porsche> .
 
-<http://example.com/car_model/Catera> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/Catera> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Cadillac> .
 
-<http://example.com/car_model/Cavalier> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/Cavalier> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Chevrolet> .
 
-<http://example.com/car_model/Celica> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/Celica> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Toyota> .
 
-<http://example.com/car_model/Cherokee> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/Cherokee> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Jeep> .
 
-<http://example.com/car_model/Cirrus> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/Cirrus> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Chrysler> .
 
-<http://example.com/car_model/Civic> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/Civic> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Honda> .
 
-<http://example.com/car_model/Concorde> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/Concorde> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Chrysler> .
 
-<http://example.com/car_model/Continental> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/Continental> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Lincoln> .
 
-<http://example.com/car_model/Contour> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/Contour> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Ford> .
 
-<http://example.com/car_model/Corolla> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/Corolla> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Toyota> .
 
-<http://example.com/car_model/Corvette> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/Corvette> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Chevrolet> .
 
-<http://example.com/car_model/Cougar> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/Cougar> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Mercury> .
 
-<http://example.com/car_model/Crown%20Victoria> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/Crown%20Victoria> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Ford> .
 
-<http://example.com/car_model/Cutlass> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/Cutlass> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Oldsmobile> .
 
-<http://example.com/car_model/Dakota> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/Dakota> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Dodge> .
 
-<http://example.com/car_model/DeVille> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/DeVille> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Cadillac> .
 
-<http://example.com/car_model/Diamante> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/Diamante> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Mitsubishi> .
 
-<http://example.com/car_model/Durango> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/Durango> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Dodge> .
 
-<http://example.com/car_model/E-Class> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/E-Class> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Mercedes-B> .
 
-<http://example.com/car_model/ES300> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/ES300> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Lexus> .
 
-<http://example.com/car_model/Eclipse> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/Eclipse> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Mitsubishi> .
 
-<http://example.com/car_model/Elantra> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/Elantra> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Hyundai> .
 
-<http://example.com/car_model/Eldorado> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/Eldorado> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Cadillac> .
 
-<http://example.com/car_model/Escalade> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/Escalade> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Cadillac> .
 
-<http://example.com/car_model/Escort> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/Escort> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Ford> .
 
-<http://example.com/car_model/Expedition> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/Expedition> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Ford> .
 
-<http://example.com/car_model/Explorer> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/Explorer> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Ford> .
 
-<http://example.com/car_model/F-Series> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/F-Series> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Ford> .
 
-<http://example.com/car_model/Firebird> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/Firebird> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Pontiac> .
 
-<http://example.com/car_model/Focus> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/Focus> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Ford> .
 
-<http://example.com/car_model/Forester> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/Forester> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Subaru> .
 
-<http://example.com/car_model/Frontier> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/Frontier> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Nissan> .
 
-<http://example.com/car_model/GS300> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/GS300> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Lexus> .
 
-<http://example.com/car_model/GS400> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/GS400> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Lexus> .
 
-<http://example.com/car_model/GTI> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/GTI> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Volkswagen> .
 
-<http://example.com/car_model/Galant> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/Galant> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Mitsubishi> .
 
-<http://example.com/car_model/Golf> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/Golf> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Volkswagen> .
 
-<http://example.com/car_model/Grand%20Am> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/Grand%20Am> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Pontiac> .
 
-<http://example.com/car_model/Grand%20Cherokee> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/Grand%20Cherokee> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Jeep> .
 
-<http://example.com/car_model/Grand%20Marquis> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/Grand%20Marquis> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Mercury> .
 
-<http://example.com/car_model/Grand%20Prix> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/Grand%20Prix> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Pontiac> .
 
-<http://example.com/car_model/I30> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/I30> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Infiniti> .
 
-<http://example.com/car_model/Impala> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/Impala> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Chevrolet> .
 
-<http://example.com/car_model/Integra> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/Integra> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Acura> .
 
-<http://example.com/car_model/Intrepid> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/Intrepid> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Dodge> .
 
-<http://example.com/car_model/Intrigue> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/Intrigue> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Oldsmobile> .
 
-<http://example.com/car_model/Jetta> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/Jetta> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Volkswagen> .
 
-<http://example.com/car_model/LHS> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/LHS> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Chrysler> .
 
-<http://example.com/car_model/LS> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/LS> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Saturn> .
 
-<http://example.com/car_model/LS400> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/LS400> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Lexus> .
 
-<http://example.com/car_model/LW> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/LW> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Saturn> .
 
-<http://example.com/car_model/LX470> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/LX470> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Lexus> .
 
-<http://example.com/car_model/Land%20Cruiser> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/Land%20Cruiser> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Toyota> .
 
-<http://example.com/car_model/LeSabre> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/LeSabre> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Buick> .
 
-<http://example.com/car_model/Lumina> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/Lumina> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Chevrolet> .
 
-<http://example.com/car_model/M-Class> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/M-Class> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Mercedes-B> .
 
-<http://example.com/car_model/Malibu> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/Malibu> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Chevrolet> .
 
-<http://example.com/car_model/Maxima> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/Maxima> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Nissan> .
 
-<http://example.com/car_model/Metro> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/Metro> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Chevrolet> .
 
-<http://example.com/car_model/Mirage> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/Mirage> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Mitsubishi> .
 
-<http://example.com/car_model/Monte%20Carlo> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/Monte%20Carlo> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Chevrolet> .
 
-<http://example.com/car_model/Montero> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/Montero> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Mitsubishi> .
 
-<http://example.com/car_model/Montero%20Sport> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/Montero%20Sport> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Mitsubishi> .
 
-<http://example.com/car_model/Mountaineer> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/Mountaineer> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Mercury> .
 
-<http://example.com/car_model/Mustang> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/Mustang> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Ford> .
 
-<http://example.com/car_model/Mystique> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/Mystique> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Mercury> .
 
-<http://example.com/car_model/Navigator> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/Navigator> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Lincoln> .
 
-<http://example.com/car_model/Neon> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/Neon> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Plymouth> .
 
-<http://example.com/car_model/Odyssey> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/Odyssey> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Honda> .
 
-<http://example.com/car_model/Outback> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/Outback> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Subaru> .
 
-<http://example.com/car_model/Park%20Avenue> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/Park%20Avenue> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Buick> .
 
-<http://example.com/car_model/Passat> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/Passat> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Volkswagen> .
 
-<http://example.com/car_model/Passport> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/Passport> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Honda> .
 
-<http://example.com/car_model/Pathfinder> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/Pathfinder> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Nissan> .
 
-<http://example.com/car_model/Prizm> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/Prizm> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Chevrolet> .
 
-<http://example.com/car_model/Prowler> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/Prowler> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Plymouth> .
 
-<http://example.com/car_model/Quest> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/Quest> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Nissan> .
 
-<http://example.com/car_model/RAV4> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/RAV4> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Toyota> .
 
-<http://example.com/car_model/RL> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/RL> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Acura> .
 
-<http://example.com/car_model/Ram%20Pickup> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/Ram%20Pickup> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Dodge> .
 
-<http://example.com/car_model/Ram%20Van> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/Ram%20Van> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Dodge> .
 
-<http://example.com/car_model/Ram%20Wagon> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/Ram%20Wagon> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Dodge> .
 
-<http://example.com/car_model/Ranger> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/Ranger> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Ford> .
 
-<http://example.com/car_model/Regal> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/Regal> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Buick> .
 
-<http://example.com/car_model/S-Class> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/S-Class> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Mercedes-B> .
 
-<http://example.com/car_model/S-Type> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/S-Type> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Jaguar> .
 
-<http://example.com/car_model/S40> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/S40> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Volvo> .
 
-<http://example.com/car_model/S70> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/S70> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Volvo> .
 
-<http://example.com/car_model/S80> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/S80> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Volvo> .
 
-<http://example.com/car_model/SC> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/SC> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Saturn> .
 
-<http://example.com/car_model/SL> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/SL> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Saturn> .
 
-<http://example.com/car_model/SL-Class> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/SL-Class> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Mercedes-B> .
 
-<http://example.com/car_model/SLK> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/SLK> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Mercedes-B> .
 
-<http://example.com/car_model/SLK230> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/SLK230> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Mercedes-B> .
 
-<http://example.com/car_model/SW> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/SW> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Saturn> .
 
-<http://example.com/car_model/Sable> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/Sable> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Mercury> .
 
-<http://example.com/car_model/Sebring%20Conv.> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/Sebring%20Conv.> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Chrysler> .
 
-<http://example.com/car_model/Sebring%20Coupe> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/Sebring%20Coupe> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Chrysler> .
 
-<http://example.com/car_model/Sentra> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/Sentra> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Nissan> .
 
-<http://example.com/car_model/Seville> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/Seville> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Cadillac> .
 
-<http://example.com/car_model/Sienna> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/Sienna> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Toyota> .
 
-<http://example.com/car_model/Silhouette> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/Silhouette> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Oldsmobile> .
 
-<http://example.com/car_model/Sonata> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/Sonata> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Hyundai> .
 
-<http://example.com/car_model/Stratus> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/Stratus> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Dodge> .
 
-<http://example.com/car_model/Sunfire> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/Sunfire> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Pontiac> .
 
-<http://example.com/car_model/TL> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/TL> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Acura> .
 
-<http://example.com/car_model/Tacoma> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/Tacoma> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Toyota> .
 
-<http://example.com/car_model/Taurus> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/Taurus> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Ford> .
 
-<http://example.com/car_model/Town%20%26%20Country> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/Town%20%26%20Country> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Chrysler> .
 
-<http://example.com/car_model/Town%20car> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/Town%20car> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Lincoln> .
 
-<http://example.com/car_model/V40> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/V40> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Volvo> .
 
-<http://example.com/car_model/V70> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/V70> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Volvo> .
 
-<http://example.com/car_model/Villager> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/Villager> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Mercury> .
 
-<http://example.com/car_model/Viper> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/Viper> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Dodge> .
 
-<http://example.com/car_model/Voyager> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/Voyager> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Plymouth> .
 
-<http://example.com/car_model/Windstar> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/Windstar> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Ford> .
 
-<http://example.com/car_model/Wrangler> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/Wrangler> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Jeep> .
 
-<http://example.com/car_model/Xterra> a <http://example.com/cars#CarModel> .
+<http://example.com/car_model/Xterra> a <http://example.com/cars#CarModel>;
+  <http://example.com/cars#hasCompany> <http://example.com/body_style/Nissan> .
 
 <http://example.com/cars/C_CND_000001> a <http://example.com/cars#Car>;
   <http://example.com/cars#carId> "C_CND_000001";
@@ -1091,10 +1242,10 @@
   <http://example.com/cars#saleDate> "1/4/2022"^^<http://www.w3.org/2001/XMLSchema#date>;
   <http://example.com/cars#soldBy> <http://example.com/dealer/C%20%26%20M%20Motors%20Inc> .
 
-<http://example.com/cars/C_CND_000061> a <http://example.com/cars#Car>;
-  <http://example.com/cars#carId> "C_CND_000061";
+<http://example.com/cars/C_CND_000061> <http://example.com/cars#carId> "C_CND_000061";
   <http://example.com/cars#hasBodyStyle> <http://example.com/body_style/Hardtop>;
   <http://example.com/cars#hasColor> <http://example.com/color/Black>;
+  a <http://example.com/cars#Car>;
   <http://example.com/cars#hasCustomer> <http://example.com/customer/Amare>;
   <http://example.com/cars#hasEngine> <http://example.com/engine/Overhead%20Camshaft>;
   <http://example.com/cars#hasModel> <http://example.com/car_model/Tacoma>;
@@ -2183,9 +2334,9 @@
   <http://example.com/cars#saleDate> "1/12/2022"^^<http://www.w3.org/2001/XMLSchema#date>;
   <http://example.com/cars#soldBy> <http://example.com/dealer/Ryder%20Truck%20Rental%20and%20Leasing> .
 
-<http://example.com/cars/C_CND_000152> a <http://example.com/cars#Car>;
-  <http://example.com/cars#carId> "C_CND_000152";
+<http://example.com/cars/C_CND_000152> <http://example.com/cars#carId> "C_CND_000152";
   <http://example.com/cars#hasBodyStyle> <http://example.com/body_style/Sedan>;
+  a <http://example.com/cars#Car>;
   <http://example.com/cars#hasColor> <http://example.com/color/Black>;
   <http://example.com/cars#hasCustomer> <http://example.com/customer/Ariel>;
   <http://example.com/cars#hasEngine> <http://example.com/engine/Double%C3%82%C2%A0Overhead%20Camshaft>;
@@ -2339,7 +2490,8 @@
   <http://example.com/cars#saleDate> "1/12/2022"^^<http://www.w3.org/2001/XMLSchema#date>;
   <http://example.com/cars#soldBy> <http://example.com/dealer/Star%20Enterprises%20Inc> .
 
-<http://example.com/cars/C_CND_000165> <http://example.com/cars#carId> "C_CND_000165";
+<http://example.com/cars/C_CND_000165> a <http://example.com/cars#Car>;
+  <http://example.com/cars#carId> "C_CND_000165";
   <http://example.com/cars#hasBodyStyle> <http://example.com/body_style/Hardtop>;
   <http://example.com/cars#hasColor> <http://example.com/color/Black>;
   <http://example.com/cars#hasCustomer> <http://example.com/customer/Matheo>;
@@ -2348,8 +2500,7 @@
   <http://example.com/cars#hasTransmission> <http://example.com/transmission/Auto>;
   <http://example.com/cars#priceUSD> "22000"^^<http://www.w3.org/2001/XMLSchema#float>;
   <http://example.com/cars#saleDate> "1/12/2022"^^<http://www.w3.org/2001/XMLSchema#date>;
-  <http://example.com/cars#soldBy> <http://example.com/dealer/Rabun%20Used%20Car%20Sales>;
-  a <http://example.com/cars#Car> .
+  <http://example.com/cars#soldBy> <http://example.com/dealer/Rabun%20Used%20Car%20Sales> .
 
 <http://example.com/cars/C_CND_000166> a <http://example.com/cars#Car>;
   <http://example.com/cars#carId> "C_CND_000166";
@@ -3275,8 +3426,8 @@
   <http://example.com/cars#saleDate> "1/23/2022"^^<http://www.w3.org/2001/XMLSchema#date>;
   <http://example.com/cars#soldBy> <http://example.com/dealer/Ryder%20Truck%20Rental%20and%20Leasing> .
 
-<http://example.com/cars/C_CND_000243> a <http://example.com/cars#Car>;
-  <http://example.com/cars#carId> "C_CND_000243";
+<http://example.com/cars/C_CND_000243> <http://example.com/cars#carId> "C_CND_000243";
+  a <http://example.com/cars#Car>;
   <http://example.com/cars#hasBodyStyle> <http://example.com/body_style/Hardtop>;
   <http://example.com/cars#hasColor> <http://example.com/color/Pale%20White>;
   <http://example.com/cars#hasCustomer> <http://example.com/customer/Alana>;
@@ -3431,7 +3582,8 @@
   <http://example.com/cars#saleDate> "1/24/2022"^^<http://www.w3.org/2001/XMLSchema#date>;
   <http://example.com/cars#soldBy> <http://example.com/dealer/Classic%20Chevy> .
 
-<http://example.com/cars/C_CND_000256> <http://example.com/cars#carId> "C_CND_000256";
+<http://example.com/cars/C_CND_000256> a <http://example.com/cars#Car>;
+  <http://example.com/cars#carId> "C_CND_000256";
   <http://example.com/cars#hasBodyStyle> <http://example.com/body_style/SUV>;
   <http://example.com/cars#hasColor> <http://example.com/color/Pale%20White>;
   <http://example.com/cars#hasCustomer> <http://example.com/customer/Joselyn>;
@@ -3440,7 +3592,6 @@
   <http://example.com/cars#hasTransmission> <http://example.com/transmission/Manual>;
   <http://example.com/cars#priceUSD> "21500"^^<http://www.w3.org/2001/XMLSchema#float>;
   <http://example.com/cars#saleDate> "1/26/2022"^^<http://www.w3.org/2001/XMLSchema#date>;
-  a <http://example.com/cars#Car>;
   <http://example.com/cars#soldBy> <http://example.com/dealer/Scrivener%20Performance%20Engineering> .
 
 <http://example.com/cars/C_CND_000257> a <http://example.com/cars#Car>;
@@ -4523,7 +4674,8 @@
   <http://example.com/cars#saleDate> "2/6/2022"^^<http://www.w3.org/2001/XMLSchema#date>;
   <http://example.com/cars#soldBy> <http://example.com/dealer/Chrysler%20of%20Tri-Cities> .
 
-<http://example.com/cars/C_CND_000347> <http://example.com/cars#carId> "C_CND_000347";
+<http://example.com/cars/C_CND_000347> a <http://example.com/cars#Car>;
+  <http://example.com/cars#carId> "C_CND_000347";
   <http://example.com/cars#hasBodyStyle> <http://example.com/body_style/SUV>;
   <http://example.com/cars#hasColor> <http://example.com/color/Pale%20White>;
   <http://example.com/cars#hasCustomer> <http://example.com/customer/Kayla>;
@@ -4531,7 +4683,6 @@
   <http://example.com/cars#hasModel> <http://example.com/car_model/I30>;
   <http://example.com/cars#hasTransmission> <http://example.com/transmission/Manual>;
   <http://example.com/cars#priceUSD> "16000"^^<http://www.w3.org/2001/XMLSchema#float>;
-  a <http://example.com/cars#Car>;
   <http://example.com/cars#saleDate> "2/6/2022"^^<http://www.w3.org/2001/XMLSchema#date>;
   <http://example.com/cars#soldBy> <http://example.com/dealer/Chrysler%20Plymouth> .
 
@@ -5447,8 +5598,7 @@
   <http://example.com/cars#saleDate> "2/9/2022"^^<http://www.w3.org/2001/XMLSchema#date>;
   <http://example.com/cars#soldBy> <http://example.com/dealer/Race%20Car%20Help> .
 
-<http://example.com/cars/C_CND_000424> a <http://example.com/cars#Car>;
-  <http://example.com/cars#carId> "C_CND_000424";
+<http://example.com/cars/C_CND_000424> <http://example.com/cars#carId> "C_CND_000424";
   <http://example.com/cars#hasBodyStyle> <http://example.com/body_style/Hatchback>;
   <http://example.com/cars#hasColor> <http://example.com/color/Pale%20White>;
   <http://example.com/cars#hasCustomer> <http://example.com/customer/Lauren>;
@@ -5457,7 +5607,8 @@
   <http://example.com/cars#hasTransmission> <http://example.com/transmission/Manual>;
   <http://example.com/cars#priceUSD> "22001"^^<http://www.w3.org/2001/XMLSchema#float>;
   <http://example.com/cars#saleDate> "2/9/2022"^^<http://www.w3.org/2001/XMLSchema#date>;
-  <http://example.com/cars#soldBy> <http://example.com/dealer/Ryder%20Truck%20Rental%20and%20Leasing> .
+  <http://example.com/cars#soldBy> <http://example.com/dealer/Ryder%20Truck%20Rental%20and%20Leasing>;
+  a <http://example.com/cars#Car> .
 
 <http://example.com/cars/C_CND_000425> a <http://example.com/cars#Car>;
   <http://example.com/cars#carId> "C_CND_000425";
@@ -5615,14 +5766,14 @@
   <http://example.com/cars#saleDate> "2/9/2022"^^<http://www.w3.org/2001/XMLSchema#date>;
   <http://example.com/cars#soldBy> <http://example.com/dealer/Ryder%20Truck%20Rental%20and%20Leasing> .
 
-<http://example.com/cars/C_CND_000438> <http://example.com/cars#carId> "C_CND_000438";
+<http://example.com/cars/C_CND_000438> a <http://example.com/cars#Car>;
+  <http://example.com/cars#carId> "C_CND_000438";
   <http://example.com/cars#hasBodyStyle> <http://example.com/body_style/Sedan>;
   <http://example.com/cars#hasColor> <http://example.com/color/Black>;
   <http://example.com/cars#hasCustomer> <http://example.com/customer/Florian>;
   <http://example.com/cars#hasEngine> <http://example.com/engine/Double%C3%82%C2%A0Overhead%20Camshaft>;
   <http://example.com/cars#hasModel> <http://example.com/car_model/328i>;
   <http://example.com/cars#hasTransmission> <http://example.com/transmission/Auto>;
-  a <http://example.com/cars#Car>;
   <http://example.com/cars#priceUSD> "18000"^^<http://www.w3.org/2001/XMLSchema#float>;
   <http://example.com/cars#saleDate> "2/9/2022"^^<http://www.w3.org/2001/XMLSchema#date>;
   <http://example.com/cars#soldBy> <http://example.com/dealer/Saab-Belle%20Dodge> .
@@ -6539,8 +6690,7 @@
   <http://example.com/cars#saleDate> "2/15/2022"^^<http://www.w3.org/2001/XMLSchema#date>;
   <http://example.com/cars#soldBy> <http://example.com/dealer/Gartner%20Buick%20Hyundai%20Saab> .
 
-<http://example.com/cars/C_CND_000515> a <http://example.com/cars#Car>;
-  <http://example.com/cars#carId> "C_CND_000515";
+<http://example.com/cars/C_CND_000515> <http://example.com/cars#carId> "C_CND_000515";
   <http://example.com/cars#hasBodyStyle> <http://example.com/body_style/Hardtop>;
   <http://example.com/cars#hasColor> <http://example.com/color/Pale%20White>;
   <http://example.com/cars#hasCustomer> <http://example.com/customer/Brady>;
@@ -6549,6 +6699,7 @@
   <http://example.com/cars#hasTransmission> <http://example.com/transmission/Manual>;
   <http://example.com/cars#priceUSD> "12500"^^<http://www.w3.org/2001/XMLSchema#float>;
   <http://example.com/cars#saleDate> "2/15/2022"^^<http://www.w3.org/2001/XMLSchema#date>;
+  a <http://example.com/cars#Car>;
   <http://example.com/cars#soldBy> <http://example.com/dealer/Suburban%20Ford> .
 
 <http://example.com/cars/C_CND_000516> a <http://example.com/cars#Car>;
@@ -6707,13 +6858,13 @@
   <http://example.com/cars#saleDate> "2/16/2022"^^<http://www.w3.org/2001/XMLSchema#date>;
   <http://example.com/cars#soldBy> <http://example.com/dealer/Chrysler%20of%20Tri-Cities> .
 
-<http://example.com/cars/C_CND_000529> <http://example.com/cars#carId> "C_CND_000529";
+<http://example.com/cars/C_CND_000529> a <http://example.com/cars#Car>;
+  <http://example.com/cars#carId> "C_CND_000529";
   <http://example.com/cars#hasBodyStyle> <http://example.com/body_style/Sedan>;
   <http://example.com/cars#hasColor> <http://example.com/color/Pale%20White>;
   <http://example.com/cars#hasCustomer> <http://example.com/customer/Noah>;
   <http://example.com/cars#hasEngine> <http://example.com/engine/Double%C3%82%C2%A0Overhead%20Camshaft>;
   <http://example.com/cars#hasModel> <http://example.com/car_model/Cutlass>;
-  a <http://example.com/cars#Car>;
   <http://example.com/cars#hasTransmission> <http://example.com/transmission/Auto>;
   <http://example.com/cars#priceUSD> "15000"^^<http://www.w3.org/2001/XMLSchema#float>;
   <http://example.com/cars#saleDate> "2/16/2022"^^<http://www.w3.org/2001/XMLSchema#date>;
@@ -7631,8 +7782,7 @@
   <http://example.com/cars#saleDate> "2/27/2022"^^<http://www.w3.org/2001/XMLSchema#date>;
   <http://example.com/cars#soldBy> <http://example.com/dealer/Race%20Car%20Help> .
 
-<http://example.com/cars/C_CND_000606> a <http://example.com/cars#Car>;
-  <http://example.com/cars#carId> "C_CND_000606";
+<http://example.com/cars/C_CND_000606> <http://example.com/cars#carId> "C_CND_000606";
   <http://example.com/cars#hasBodyStyle> <http://example.com/body_style/Hatchback>;
   <http://example.com/cars#hasColor> <http://example.com/color/Pale%20White>;
   <http://example.com/cars#hasCustomer> <http://example.com/customer/Quinn>;
@@ -7640,6 +7790,7 @@
   <http://example.com/cars#hasModel> <http://example.com/car_model/5-Sep>;
   <http://example.com/cars#hasTransmission> <http://example.com/transmission/Manual>;
   <http://example.com/cars#priceUSD> "28000"^^<http://www.w3.org/2001/XMLSchema#float>;
+  a <http://example.com/cars#Car>;
   <http://example.com/cars#saleDate> "2/27/2022"^^<http://www.w3.org/2001/XMLSchema#date>;
   <http://example.com/cars#soldBy> <http://example.com/dealer/Scrivener%20Performance%20Engineering> .
 
@@ -7799,12 +7950,12 @@
   <http://example.com/cars#saleDate> "2/27/2022"^^<http://www.w3.org/2001/XMLSchema#date>;
   <http://example.com/cars#soldBy> <http://example.com/dealer/Ryder%20Truck%20Rental%20and%20Leasing> .
 
-<http://example.com/cars/C_CND_000620> <http://example.com/cars#carId> "C_CND_000620";
+<http://example.com/cars/C_CND_000620> a <http://example.com/cars#Car>;
+  <http://example.com/cars#carId> "C_CND_000620";
   <http://example.com/cars#hasBodyStyle> <http://example.com/body_style/Sedan>;
   <http://example.com/cars#hasColor> <http://example.com/color/Pale%20White>;
   <http://example.com/cars#hasCustomer> <http://example.com/customer/Cyrielle>;
   <http://example.com/cars#hasEngine> <http://example.com/engine/Overhead%20Camshaft>;
-  a <http://example.com/cars#Car>;
   <http://example.com/cars#hasModel> <http://example.com/car_model/Maxima>;
   <http://example.com/cars#hasTransmission> <http://example.com/transmission/Manual>;
   <http://example.com/cars#priceUSD> "22000"^^<http://www.w3.org/2001/XMLSchema#float>;
@@ -8723,14 +8874,14 @@
   <http://example.com/cars#saleDate> "3/5/2022"^^<http://www.w3.org/2001/XMLSchema#date>;
   <http://example.com/cars#soldBy> <http://example.com/dealer/Clay%20Johnson%20Auto%20Sales> .
 
-<http://example.com/cars/C_CND_000697> a <http://example.com/cars#Car>;
-  <http://example.com/cars#carId> "C_CND_000697";
+<http://example.com/cars/C_CND_000697> <http://example.com/cars#carId> "C_CND_000697";
   <http://example.com/cars#hasBodyStyle> <http://example.com/body_style/Sedan>;
   <http://example.com/cars#hasColor> <http://example.com/color/Black>;
   <http://example.com/cars#hasCustomer> <http://example.com/customer/Paola>;
   <http://example.com/cars#hasEngine> <http://example.com/engine/Double%C3%82%C2%A0Overhead%20Camshaft>;
   <http://example.com/cars#hasModel> <http://example.com/car_model/3000GT>;
   <http://example.com/cars#hasTransmission> <http://example.com/transmission/Auto>;
+  a <http://example.com/cars#Car>;
   <http://example.com/cars#priceUSD> "39001"^^<http://www.w3.org/2001/XMLSchema#float>;
   <http://example.com/cars#saleDate> "3/5/2022"^^<http://www.w3.org/2001/XMLSchema#date>;
   <http://example.com/cars#soldBy> <http://example.com/dealer/Diehl%20Motor%20CO%20Inc> .
@@ -8891,11 +9042,11 @@
   <http://example.com/cars#saleDate> "3/5/2022"^^<http://www.w3.org/2001/XMLSchema#date>;
   <http://example.com/cars#soldBy> <http://example.com/dealer/Race%20Car%20Help> .
 
-<http://example.com/cars/C_CND_000711> <http://example.com/cars#carId> "C_CND_000711";
+<http://example.com/cars/C_CND_000711> a <http://example.com/cars#Car>;
+  <http://example.com/cars#carId> "C_CND_000711";
   <http://example.com/cars#hasBodyStyle> <http://example.com/body_style/Hatchback>;
   <http://example.com/cars#hasColor> <http://example.com/color/Black>;
   <http://example.com/cars#hasCustomer> <http://example.com/customer/Shia>;
-  a <http://example.com/cars#Car>;
   <http://example.com/cars#hasEngine> <http://example.com/engine/Overhead%20Camshaft>;
   <http://example.com/cars#hasModel> <http://example.com/car_model/GS400>;
   <http://example.com/cars#hasTransmission> <http://example.com/transmission/Manual>;
@@ -9815,13 +9966,13 @@
   <http://example.com/cars#saleDate> "3/7/2022"^^<http://www.w3.org/2001/XMLSchema#date>;
   <http://example.com/cars#soldBy> <http://example.com/dealer/Diehl%20Motor%20CO%20Inc> .
 
-<http://example.com/cars/C_CND_000788> a <http://example.com/cars#Car>;
-  <http://example.com/cars#carId> "C_CND_000788";
+<http://example.com/cars/C_CND_000788> <http://example.com/cars#carId> "C_CND_000788";
   <http://example.com/cars#hasBodyStyle> <http://example.com/body_style/SUV>;
   <http://example.com/cars#hasColor> <http://example.com/color/Pale%20White>;
   <http://example.com/cars#hasCustomer> <http://example.com/customer/Nicolas>;
   <http://example.com/cars#hasEngine> <http://example.com/engine/Overhead%20Camshaft>;
   <http://example.com/cars#hasModel> <http://example.com/car_model/Boxter>;
+  a <http://example.com/cars#Car>;
   <http://example.com/cars#hasTransmission> <http://example.com/transmission/Manual>;
   <http://example.com/cars#priceUSD> "24000"^^<http://www.w3.org/2001/XMLSchema#float>;
   <http://example.com/cars#saleDate> "3/7/2022"^^<http://www.w3.org/2001/XMLSchema#date>;
@@ -9983,10 +10134,10 @@
   <http://example.com/cars#saleDate> "3/8/2022"^^<http://www.w3.org/2001/XMLSchema#date>;
   <http://example.com/cars#soldBy> <http://example.com/dealer/Scrivener%20Performance%20Engineering> .
 
-<http://example.com/cars/C_CND_000802> <http://example.com/cars#carId> "C_CND_000802";
+<http://example.com/cars/C_CND_000802> a <http://example.com/cars#Car>;
+  <http://example.com/cars#carId> "C_CND_000802";
   <http://example.com/cars#hasBodyStyle> <http://example.com/body_style/SUV>;
   <http://example.com/cars#hasColor> <http://example.com/color/Pale%20White>;
-  a <http://example.com/cars#Car>;
   <http://example.com/cars#hasCustomer> <http://example.com/customer/Sarah>;
   <http://example.com/cars#hasEngine> <http://example.com/engine/Double%C3%82%C2%A0Overhead%20Camshaft>;
   <http://example.com/cars#hasModel> <http://example.com/car_model/Corvette>;
@@ -10907,12 +11058,12 @@
   <http://example.com/cars#saleDate> "3/12/2022"^^<http://www.w3.org/2001/XMLSchema#date>;
   <http://example.com/cars#soldBy> <http://example.com/dealer/Nebo%20Chevrolet> .
 
-<http://example.com/cars/C_CND_000879> a <http://example.com/cars#Car>;
-  <http://example.com/cars#carId> "C_CND_000879";
+<http://example.com/cars/C_CND_000879> <http://example.com/cars#carId> "C_CND_000879";
   <http://example.com/cars#hasBodyStyle> <http://example.com/body_style/Passenger>;
   <http://example.com/cars#hasColor> <http://example.com/color/Pale%20White>;
   <http://example.com/cars#hasCustomer> <http://example.com/customer/Syed>;
   <http://example.com/cars#hasEngine> <http://example.com/engine/Overhead%20Camshaft>;
+  a <http://example.com/cars#Car>;
   <http://example.com/cars#hasModel> <http://example.com/car_model/Voyager>;
   <http://example.com/cars#hasTransmission> <http://example.com/transmission/Manual>;
   <http://example.com/cars#priceUSD> "20000"^^<http://www.w3.org/2001/XMLSchema#float>;
@@ -11075,9 +11226,9 @@
   <http://example.com/cars#saleDate> "3/13/2022"^^<http://www.w3.org/2001/XMLSchema#date>;
   <http://example.com/cars#soldBy> <http://example.com/dealer/Tri-State%20Mack%20Inc> .
 
-<http://example.com/cars/C_CND_000893> <http://example.com/cars#carId> "C_CND_000893";
+<http://example.com/cars/C_CND_000893> a <http://example.com/cars#Car>;
+  <http://example.com/cars#carId> "C_CND_000893";
   <http://example.com/cars#hasBodyStyle> <http://example.com/body_style/Hatchback>;
-  a <http://example.com/cars#Car>;
   <http://example.com/cars#hasColor> <http://example.com/color/Pale%20White>;
   <http://example.com/cars#hasCustomer> <http://example.com/customer/Trinity>;
   <http://example.com/cars#hasEngine> <http://example.com/engine/Double%C3%82%C2%A0Overhead%20Camshaft>;
@@ -11999,11 +12150,11 @@
   <http://example.com/cars#saleDate> "3/16/2022"^^<http://www.w3.org/2001/XMLSchema#date>;
   <http://example.com/cars#soldBy> <http://example.com/dealer/Rabun%20Used%20Car%20Sales> .
 
-<http://example.com/cars/C_CND_000970> a <http://example.com/cars#Car>;
-  <http://example.com/cars#carId> "C_CND_000970";
+<http://example.com/cars/C_CND_000970> <http://example.com/cars#carId> "C_CND_000970";
   <http://example.com/cars#hasBodyStyle> <http://example.com/body_style/SUV>;
   <http://example.com/cars#hasColor> <http://example.com/color/Pale%20White>;
   <http://example.com/cars#hasCustomer> <http://example.com/customer/Zayan>;
+  a <http://example.com/cars#Car>;
   <http://example.com/cars#hasEngine> <http://example.com/engine/Overhead%20Camshaft>;
   <http://example.com/cars#hasModel> <http://example.com/car_model/Cavalier>;
   <http://example.com/cars#hasTransmission> <http://example.com/transmission/Manual>;
@@ -12167,8 +12318,8 @@
   <http://example.com/cars#saleDate> "3/17/2022"^^<http://www.w3.org/2001/XMLSchema#date>;
   <http://example.com/cars#soldBy> <http://example.com/dealer/Tri-State%20Mack%20Inc> .
 
-<http://example.com/cars/C_CND_000984> <http://example.com/cars#carId> "C_CND_000984";
-  a <http://example.com/cars#Car>;
+<http://example.com/cars/C_CND_000984> a <http://example.com/cars#Car>;
+  <http://example.com/cars#carId> "C_CND_000984";
   <http://example.com/cars#hasBodyStyle> <http://example.com/body_style/Sedan>;
   <http://example.com/cars#hasColor> <http://example.com/color/Pale%20White>;
   <http://example.com/cars#hasCustomer> <http://example.com/customer/Adonis>;
@@ -13356,11 +13507,11 @@
   <http://example.com/cars#customerName> "Godard";
   <http://example.com/cars#gender> "Male" .
 
-<http://example.com/customer/Grace> <http://example.com/cars#annualIncome> "1465000"^^<http://www.w3.org/2001/XMLSchema#float>,
+<http://example.com/customer/Grace> a <http://example.com/cars#Customer>;
+  <http://example.com/cars#annualIncome> "1465000"^^<http://www.w3.org/2001/XMLSchema#float>,
     "1835000"^^<http://www.w3.org/2001/XMLSchema#float>;
   <http://example.com/cars#customerName> "Grace";
-  <http://example.com/cars#gender> "Female", "Male";
-  a <http://example.com/cars#Customer> .
+  <http://example.com/cars#gender> "Female", "Male" .
 
 <http://example.com/customer/Graham> a <http://example.com/cars#Customer>;
   <http://example.com/cars#annualIncome> "13500"^^<http://www.w3.org/2001/XMLSchema#float>;
@@ -14359,11 +14510,11 @@
   <http://example.com/cars#customerName> "Lia";
   <http://example.com/cars#gender> "Female" .
 
-<http://example.com/customer/Liam> a <http://example.com/cars#Customer>;
-  <http://example.com/cars#annualIncome> "13500"^^<http://www.w3.org/2001/XMLSchema#float>,
+<http://example.com/customer/Liam> <http://example.com/cars#annualIncome> "13500"^^<http://www.w3.org/2001/XMLSchema#float>,
     "643500"^^<http://www.w3.org/2001/XMLSchema#float>;
   <http://example.com/cars#customerName> "Liam";
-  <http://example.com/cars#gender> "Male" .
+  <http://example.com/cars#gender> "Male";
+  a <http://example.com/cars#Customer> .
 
 <http://example.com/customer/Liana> a <http://example.com/cars#Customer>;
   <http://example.com/cars#annualIncome> "700000"^^<http://www.w3.org/2001/XMLSchema#float>;
@@ -14538,8 +14689,8 @@
   <http://example.com/cars#customerName> "Lyric";
   <http://example.com/cars#gender> "Female" .
 
-<http://example.com/customer/Mackenzie> <http://example.com/cars#annualIncome> "881000"^^<http://www.w3.org/2001/XMLSchema#float>;
-  a <http://example.com/cars#Customer>;
+<http://example.com/customer/Mackenzie> a <http://example.com/cars#Customer>;
+  <http://example.com/cars#annualIncome> "881000"^^<http://www.w3.org/2001/XMLSchema#float>;
   <http://example.com/cars#customerName> "Mackenzie";
   <http://example.com/cars#gender> "Male" .
 
@@ -15551,9 +15702,9 @@
   <http://example.com/cars#customerName> "Sarai";
   <http://example.com/cars#gender> "Male" .
 
-<http://example.com/customer/Sariah> a <http://example.com/cars#Customer>;
-  <http://example.com/cars#annualIncome> "2800000"^^<http://www.w3.org/2001/XMLSchema#float>,
-    "620000"^^<http://www.w3.org/2001/XMLSchema#float>;
+<http://example.com/customer/Sariah> <http://example.com/cars#annualIncome> "2800000"^^<http://www.w3.org/2001/XMLSchema#float>;
+  a <http://example.com/cars#Customer>;
+  <http://example.com/cars#annualIncome> "620000"^^<http://www.w3.org/2001/XMLSchema#float>;
   <http://example.com/cars#customerName> "Sariah";
   <http://example.com/cars#gender> "Male" .
 
@@ -16277,7 +16428,8 @@
     "6443234", "6466455", "6503890", "6682438", "6687979", "6948225", "7298842", "7343502",
     "7446612", "7478336", "7669561", "7677191", "7696195", "7721381", "7722013", "7873794",
     "7906708", "8151504", "8206647", "8264678", "8526296", "8725531", "8790801", "8928661",
-    "8939776", "8952847" .
+    "8939776", "8952847";
+  <http://example.com/cars#locatedIn> "Janesville", "Middletown", "Pasco" .
 
 <http://example.com/dealer/C%20%26%20M%20Motors%20Inc> a <http://example.com/cars#Dealer>;
   <http://example.com/cars#dealerName> "C & M Motors Inc";
@@ -16285,7 +16437,8 @@
   <http://example.com/cars#dealerPhone> "6058633", "6188796", "6402878", "6457346",
     "6536878", "6690653", "6848189", "6926317", "7066577", "7074236", "7126712", "7135308",
     "7177888", "7275191", "7296925", "7395758", "7449262", "7453504", "7851186", "7853364",
-    "8120812", "8431908", "8505763", "8525846", "8711691", "8795584", "8905811", "8939266" .
+    "8120812", "8431908", "8505763", "8525846", "8711691", "8795584", "8905811", "8939266";
+  <http://example.com/cars#locatedIn> "Aurora", "Scottsdale" .
 
 <http://example.com/dealer/Capitol%20KIA> a <http://example.com/cars#Dealer>;
   <http://example.com/cars#dealerName> "Capitol KIA";
@@ -16293,7 +16446,8 @@
   <http://example.com/cars#dealerPhone> "6125793", "6226752", "6279351", "6374244",
     "6407820", "6436923", "6597430", "6617039", "7004631", "7059355", "7298798", "7475999",
     "7560129", "7636264", "7732717", "7814646", "7977360", "8094001", "8387204", "8434935",
-    "8552255", "8704441", "8835994", "8865046" .
+    "8552255", "8704441", "8835994", "8865046";
+  <http://example.com/cars#locatedIn> "Austin", "Greenville" .
 
 <http://example.com/dealer/Chrysler%20Plymouth> a <http://example.com/cars#Dealer>;
   <http://example.com/cars#dealerName> "Chrysler Plymouth";
@@ -16301,7 +16455,8 @@
   <http://example.com/cars#dealerPhone> "6042502", "6690603", "6730472", "6799712",
     "6936555", "7081483", "7152789", "7232489", "7244029", "7249749", "7540134", "7555872",
     "7627010", "8002189", "8002612", "8125633", "8136922", "8356711", "8400571", "8574162",
-    "8608359", "8614375", "8653420", "8672450", "8806094", "8879181" .
+    "8608359", "8614375", "8653420", "8672450", "8806094", "8879181";
+  <http://example.com/cars#locatedIn> "Aurora", "Janesville" .
 
 <http://example.com/dealer/Chrysler%20of%20Tri-Cities> a <http://example.com/cars#Dealer>;
   <http://example.com/cars#dealerName> "Chrysler of Tri-Cities";
@@ -16310,7 +16465,8 @@
     "6299231", "6428270", "6460680", "6500188", "6540020", "6608855", "6633882", "6871210",
     "6894798", "7072635", "7273916", "7350448", "7445427", "7456650", "8067211", "8108037",
     "8230754", "8523869", "8573478", "8582417", "8655744", "8818015", "8952066", "8973448",
-    "8974784", "8982126", "8983087" .
+    "8974784", "8982126", "8983087";
+  <http://example.com/cars#locatedIn> "Austin", "Greenville", "Middletown", "Pasco" .
 
 <http://example.com/dealer/Classic%20Chevy> a <http://example.com/cars#Dealer>;
   <http://example.com/cars#dealerName> "Classic Chevy";
@@ -16318,7 +16474,8 @@
   <http://example.com/cars#dealerPhone> "6132994", "6183219", "6327935", "6340172",
     "6736704", "6741165", "6973354", "7085492", "7200530", "7267113", "7315216", "7485080",
     "7616743", "7673891", "7685288", "7765301", "8000061", "8011357", "8012806", "8039027",
-    "8138829", "8335175", "8350736", "8431840", "8749967", "8851769" .
+    "8138829", "8335175", "8350736", "8431840", "8749967", "8851769";
+  <http://example.com/cars#locatedIn> "Austin", "Greenville", "Scottsdale" .
 
 <http://example.com/dealer/Clay%20Johnson%20Auto%20Sales> a <http://example.com/cars#Dealer>;
   <http://example.com/cars#dealerName> "Clay Johnson Auto Sales";
@@ -16326,7 +16483,8 @@
   <http://example.com/cars#dealerPhone> "6047744", "6067809", "6129154", "6569596",
     "6872309", "7050740", "7114417", "7226372", "7539127", "7576050", "7727879", "7810244",
     "7868798", "7889827", "8026726", "8054987", "8121200", "8520184", "8594191", "8635781",
-    "8652954", "8668755", "8767784", "8808261", "8822935", "8993047" .
+    "8652954", "8668755", "8767784", "8808261", "8822935", "8993047";
+  <http://example.com/cars#locatedIn> "Austin", "Pasco" .
 
 <http://example.com/dealer/Diehl%20Motor%20CO%20Inc> a <http://example.com/cars#Dealer>;
   <http://example.com/cars#dealerName> "Diehl Motor CO Inc";
@@ -16335,7 +16493,8 @@
     "6739543", "6826319", "6871183", "7014962", "7123918", "7153628", "7207345", "7283681",
     "7514641", "7536144", "7570002", "7586964", "7856638", "7891679", "8097778", "8123167",
     "8165932", "8193979", "8403838", "8600506", "8695032", "8771750", "8892301", "8928430",
-    "8970669" .
+    "8970669";
+  <http://example.com/cars#locatedIn> "Austin", "Janesville", "Middletown" .
 
 <http://example.com/dealer/Enterprise%20Rent%20A%20Car> a <http://example.com/cars#Dealer>;
   <http://example.com/cars#dealerName> "Enterprise Rent A Car";
@@ -16343,7 +16502,8 @@
   <http://example.com/cars#dealerPhone> "6091237", "6125796", "6238423", "6367069",
     "6422078", "6608005", "6672623", "6814756", "6970913", "7088700", "7391292", "7415369",
     "7651983", "7712199", "7912705", "7966597", "8082987", "8382877", "8439749", "8690167",
-    "8750989", "8812716", "8812745", "8896135", "8920963" .
+    "8750989", "8812716", "8812745", "8896135", "8920963";
+  <http://example.com/cars#locatedIn> "Aurora", "Scottsdale" .
 
 <http://example.com/dealer/Gartner%20Buick%20Hyundai%20Saab> a <http://example.com/cars#Dealer>;
   <http://example.com/cars#dealerName> "Gartner Buick Hyundai Saab";
@@ -16351,7 +16511,8 @@
   <http://example.com/cars#dealerPhone> "6023526", "6388783", "6395931", "6547535",
     "6548543", "6630663", "6784534", "6884967", "6899959", "7293514", "7363601", "7438037",
     "7465437", "7495544", "7552575", "7658357", "8196804", "8328637", "8378169", "8414102",
-    "8429371", "8458735", "8466285", "8493769", "8519023", "8938872", "8943064" .
+    "8429371", "8458735", "8466285", "8493769", "8519023", "8938872", "8943064";
+  <http://example.com/cars#locatedIn> "Austin", "Greenville" .
 
 <http://example.com/dealer/Hatfield%20Volkswagen> a <http://example.com/cars#Dealer>;
   <http://example.com/cars#dealerName> "Hatfield Volkswagen";
@@ -16359,7 +16520,8 @@
   <http://example.com/cars#dealerPhone> "6000326", "6230383", "6244359", "6535530",
     "6632898", "6633607", "6748072", "6837588", "7052296", "7154079", "7379408", "7638367",
     "7944735", "7972719", "8165740", "8349770", "8368460", "8436885", "8643987", "8689761",
-    "8716925" .
+    "8716925";
+  <http://example.com/cars#locatedIn> "Janesville", "Pasco" .
 
 <http://example.com/dealer/Iceberg%20Rentals> a <http://example.com/cars#Dealer>;
   <http://example.com/cars#dealerName> "Iceberg Rentals";
@@ -16367,15 +16529,19 @@
   <http://example.com/cars#dealerPhone> "6457683", "6737724", "6889488", "7077011",
     "7160297", "7181009", "7192845", "7279330", "7390232", "7398647", "7485792", "7653538",
     "7683583", "7697601", "7798861", "8022456", "8052947", "8099375", "8221235", "8804792",
-    "8852693", "8869478", "8962316" .
+    "8852693", "8869478", "8962316";
+  <http://example.com/cars#locatedIn> "Janesville", "Scottsdale" .
 
-<http://example.com/dealer/McKinney%20Dodge%20Chrysler%20Jeep> a <http://example.com/cars#Dealer>;
-  <http://example.com/cars#dealerName> "McKinney Dodge Chrysler Jeep";
+<http://example.com/dealer/McKinney%20Dodge%20Chrysler%20Jeep> <http://example.com/cars#dealerName>
+    "McKinney Dodge Chrysler Jeep";
   <http://example.com/cars#dealerNumber> "85257-3102";
   <http://example.com/cars#dealerPhone> "6034632", "6342871", "6373366", "6381408",
-    "6444851", "6464425", "6473319", "6641303", "6712658", "7043970", "7297362", "7387235",
+    "6444851", "6464425", "6473319", "6641303";
+  a <http://example.com/cars#Dealer>;
+  <http://example.com/cars#dealerPhone> "6712658", "7043970", "7297362", "7387235",
     "7743761", "7797157", "7824922", "7936565", "8063218", "8101678", "8231045", "8283838",
-    "8365420", "8369000", "8533597", "8547639", "8987884" .
+    "8365420", "8369000", "8533597", "8547639", "8987884";
+  <http://example.com/cars#locatedIn> "Austin", "Janesville", "Scottsdale" .
 
 <http://example.com/dealer/Motor%20Vehicle%20Branch%20Office> a <http://example.com/cars#Dealer>;
   <http://example.com/cars#dealerName> "Motor Vehicle Branch Office";
@@ -16383,7 +16549,8 @@
   <http://example.com/cars#dealerPhone> "6052630", "6711152", "6750650", "6766211",
     "6799958", "6835807", "6892551", "7005538", "7010511", "7149864", "7214445", "7268434",
     "7348351", "7356041", "7457602", "7580732", "7744781", "7757499", "7883643", "7891405",
-    "7925467", "8236351", "8443641", "8755338", "8884667", "8931658" .
+    "7925467", "8236351", "8443641", "8755338", "8884667", "8931658";
+  <http://example.com/cars#locatedIn> "Austin", "Middletown" .
 
 <http://example.com/dealer/Nebo%20Chevrolet> a <http://example.com/cars#Dealer>;
   <http://example.com/cars#dealerName> "Nebo Chevrolet";
@@ -16391,7 +16558,8 @@
   <http://example.com/cars#dealerPhone> "6020678", "6325329", "6438030", "6539279",
     "6586282", "6586288", "6759578", "6838769", "7158561", "7367118", "7419754", "7557998",
     "7887874", "7915626", "7981604", "8005217", "8026457", "8246066", "8267311", "8291553",
-    "8416308", "8477827", "8530223", "8840430", "8854864", "8904235", "8920349", "8941110" .
+    "8416308", "8477827", "8530223", "8840430", "8854864", "8904235", "8920349", "8941110";
+  <http://example.com/cars#locatedIn> "Aurora", "Austin", "Middletown" .
 
 <http://example.com/dealer/New%20Castle%20Ford%20Lincoln%20Mercury> a <http://example.com/cars#Dealer>;
   <http://example.com/cars#dealerName> "New Castle Ford Lincoln Mercury";
@@ -16399,7 +16567,8 @@
   <http://example.com/cars#dealerPhone> "6066163", "6146754", "6181924", "6284138",
     "6295734", "6308303", "6320456", "6362075", "6779688", "6988989", "7126248", "7225785",
     "7328070", "7360406", "7645687", "7997367", "8030571", "8070819", "8091325", "8111765",
-    "8238020", "8255349", "8337679", "8541398", "8717945", "8872334" .
+    "8238020", "8255349", "8337679", "8541398", "8717945", "8872334";
+  <http://example.com/cars#locatedIn> "Aurora", "Greenville", "Middletown" .
 
 <http://example.com/dealer/Pars%20Auto%20Sales> a <http://example.com/cars#Dealer>;
   <http://example.com/cars#dealerName> "Pars Auto Sales";
@@ -16407,7 +16576,8 @@
   <http://example.com/cars#dealerPhone> "6047672", "6204993", "6323753", "6498035",
     "6541455", "6548230", "6575531", "6655590", "6719698", "6735346", "6742609", "6837486",
     "6875824", "6906972", "6928011", "7000246", "7078803", "7259951", "7848361", "7890074",
-    "8027066", "8118201", "8153712", "8155813", "8263309", "8380627", "8578439", "8896298" .
+    "8027066", "8118201", "8153712", "8155813", "8263309", "8380627", "8578439", "8896298";
+  <http://example.com/cars#locatedIn> "Aurora", "Greenville", "Pasco" .
 
 <http://example.com/dealer/Pitre%20Buick-Pontiac-Gmc%20of%20Scottsdale> a <http://example.com/cars#Dealer>;
   <http://example.com/cars#dealerName> "Pitre Buick-Pontiac-Gmc of Scottsdale";
@@ -16415,20 +16585,22 @@
   <http://example.com/cars#dealerPhone> "6024425", "6052646", "6307517", "6388852",
     "6466663", "6505188", "6534513", "6576726", "6631542", "6691774", "6863920", "6932836",
     "7031644", "7230075", "7307787", "7480624", "7580953", "7947220", "8280131", "8368721",
-    "8391489", "8636283", "8843585", "8884589", "8932822", "8946990", "8958510" .
+    "8391489", "8636283", "8843585", "8884589", "8932822", "8946990", "8958510";
+  <http://example.com/cars#locatedIn> "Greenville", "Janesville", "Pasco" .
 
 <http://example.com/dealer/Progressive%20Shippers%20Cooperative%20Association%20No>
+  a <http://example.com/cars#Dealer>;
   <http://example.com/cars#dealerName> "Progressive Shippers Cooperative Association No";
   <http://example.com/cars#dealerNumber> "53546-9427";
   <http://example.com/cars#dealerPhone> "6040855", "6099473", "6281210", "6297123",
-    "6328688", "6391264", "6440545", "6484440", "6615544", "6616874";
-  a <http://example.com/cars#Dealer>;
-  <http://example.com/cars#dealerPhone> "6740906", "6775570", "7091817", "7102722",
-    "7109521", "7135746", "7148486", "7179280", "7264601", "7410063", "7455549", "7464402",
-    "7479865", "7494828", "7497712", "7611671", "7680267", "7860814", "7861469", "7886047",
-    "7904101", "8164247", "8192111", "8216814", "8262408", "8277119", "8306867", "8319148",
-    "8364695", "8378577", "8426599", "8442971", "8452077", "8628055", "8716913", "8762318",
-    "8763502", "8766594", "8773780", "8872486", "8924275", "8978357", "8984113" .
+    "6328688", "6391264", "6440545", "6484440", "6615544", "6616874", "6740906", "6775570",
+    "7091817", "7102722", "7109521", "7135746", "7148486", "7179280", "7264601", "7410063",
+    "7455549", "7464402", "7479865", "7494828", "7497712", "7611671", "7680267", "7860814",
+    "7861469", "7886047", "7904101", "8164247", "8192111", "8216814", "8262408", "8277119",
+    "8306867", "8319148", "8364695", "8378577", "8426599", "8442971", "8452077", "8628055",
+    "8716913", "8762318", "8763502", "8766594", "8773780", "8872486", "8924275", "8978357",
+    "8984113";
+  <http://example.com/cars#locatedIn> "Aurora", "Austin", "Janesville", "Pasco", "Scottsdale" .
 
 <http://example.com/dealer/Rabun%20Used%20Car%20Sales> a <http://example.com/cars#Dealer>;
   <http://example.com/cars#dealerName> "Rabun Used Car Sales";
@@ -16439,7 +16611,9 @@
     "7051861", "7056941", "7081916", "7142552", "7174238", "7194857", "7293423", "7305344",
     "7519996", "7559678", "7578367", "7583887", "7618560", "7774440", "7824592", "7836892",
     "7944509", "7963438", "7998623", "8001056", "8064818", "8148532", "8334184", "8355094",
-    "8406767", "8570948", "8732635", "8824995", "8851572", "8907733", "8957521" .
+    "8406767", "8570948", "8732635", "8824995", "8851572", "8907733", "8957521";
+  <http://example.com/cars#locatedIn> "Aurora", "Austin", "Greenville", "Janesville",
+    "Middletown", "Pasco", "Scottsdale" .
 
 <http://example.com/dealer/Race%20Car%20Help> a <http://example.com/cars#Dealer>;
   <http://example.com/cars#dealerName> "Race Car Help";
@@ -16451,7 +16625,9 @@
     "7759810", "7807481", "7946702", "7984884", "7995489", "8018969", "8158584", "8160891",
     "8175951", "8188037", "8346236", "8370326", "8372194", "8486721", "8591943", "8643280",
     "8687698", "8690744", "8699809", "8774114", "8832826", "8869724", "8871624", "8875803",
-    "8928940", "8935207", "8941079" .
+    "8928940", "8935207", "8941079";
+  <http://example.com/cars#locatedIn> "Aurora", "Austin", "Janesville", "Middletown",
+    "Pasco", "Scottsdale" .
 
 <http://example.com/dealer/Ryder%20Truck%20Rental%20and%20Leasing> a <http://example.com/cars#Dealer>;
   <http://example.com/cars#dealerName> "Ryder Truck Rental and Leasing";
@@ -16462,7 +16638,9 @@
     "7189696", "7221911", "7296907", "7428074", "7472177", "7474014", "7561365", "7647213",
     "7697275", "7698986", "7770959", "7808972", "7836930", "7921183", "7941618", "8001428",
     "8027275", "8041492", "8152643", "8282706", "8283096", "8331205", "8374673", "8455241",
-    "8483559", "8518126", "8621823", "8653853", "8669480", "8686847", "8780144", "8919137" .
+    "8483559", "8518126", "8621823", "8653853", "8669480", "8686847", "8780144", "8919137";
+  <http://example.com/cars#locatedIn> "Aurora", "Austin", "Greenville", "Janesville",
+    "Middletown", "Scottsdale" .
 
 <http://example.com/dealer/Saab-Belle%20Dodge> a <http://example.com/cars#Dealer>;
   <http://example.com/cars#dealerName> "Saab-Belle Dodge";
@@ -16473,7 +16651,9 @@
     "7316398", "7460938", "7472415", "7517211", "7612460", "7719614", "7755205", "7872509",
     "7960177", "7963029", "7976159", "8011515", "8092134", "8127221", "8232134", "8326273",
     "8351089", "8483928", "8518048", "8582152", "8584566", "8664416", "8674116", "8675887",
-    "8711758", "8740005", "8830216", "8844816", "8847858", "8948624" .
+    "8711758", "8740005", "8830216", "8844816", "8847858", "8948624";
+  <http://example.com/cars#locatedIn> "Aurora", "Austin", "Greenville", "Janesville",
+    "Middletown", "Pasco", "Scottsdale" .
 
 <http://example.com/dealer/Scrivener%20Performance%20Engineering> a <http://example.com/cars#Dealer>;
   <http://example.com/cars#dealerName> "Scrivener Performance Engineering";
@@ -16485,7 +16665,9 @@
     "7826082", "7841055", "7890478", "7934969", "8060024", "8069059", "8089010", "8114422",
     "8127385", "8152791", "8239781", "8290004", "8306394", "8344679", "8420039", "8486170",
     "8527216", "8551646", "8637804", "8675849", "8715850", "8724403", "8755273", "8831276",
-    "8832415", "8862051" .
+    "8832415", "8862051";
+  <http://example.com/cars#locatedIn> "Aurora", "Austin", "Greenville", "Janesville",
+    "Middletown", "Pasco", "Scottsdale" .
 
 <http://example.com/dealer/Star%20Enterprises%20Inc> a <http://example.com/cars#Dealer>;
   <http://example.com/cars#dealerName> "Star Enterprises Inc";
@@ -16497,7 +16679,9 @@
     "7328730", "7478439", "7528573", "7581505", "7599809", "7608332", "7781272", "7864153",
     "7911651", "7958184", "7959858", "8087925", "8092870", "8317341", "8341037", "8349697",
     "8364023", "8376405", "8380613", "8430439", "8442009", "8482781", "8601323", "8706152",
-    "8808789", "8901635", "8983460" .
+    "8808789", "8901635", "8983460";
+  <http://example.com/cars#locatedIn> "Aurora", "Greenville", "Janesville", "Middletown",
+    "Pasco", "Scottsdale" .
 
 <http://example.com/dealer/Suburban%20Ford> a <http://example.com/cars#Dealer>;
   <http://example.com/cars#dealerName> "Suburban Ford";
@@ -16508,7 +16692,9 @@
     "7364033", "7381956", "7448214", "7546455", "7658291", "7704004", "7741174", "7765322",
     "7843539", "7973660", "7977359", "7991070", "8000230", "8019490", "8184715", "8210697",
     "8345441", "8380491", "8411665", "8570849", "8630844", "8790575", "8836166", "8853560",
-    "8885364", "8930793", "8967853", "8983215" .
+    "8885364", "8930793", "8967853", "8983215";
+  <http://example.com/cars#locatedIn> "Aurora", "Austin", "Greenville", "Janesville",
+    "Pasco", "Scottsdale" .
 
 <http://example.com/dealer/Tri-State%20Mack%20Inc> a <http://example.com/cars#Dealer>;
   <http://example.com/cars#dealerName> "Tri-State Mack Inc";
@@ -16520,7 +16706,9 @@
     "7778542", "7870285", "7954038", "8018700", "8134310", "8144887", "8182025", "8198224",
     "8226270", "8326958", "8391158", "8471190", "8481912", "8501584", "8520534", "8521858",
     "8528664", "8588830", "8626515", "8641482", "8680832", "8724372", "8743071", "8801449",
-    "8814261", "8843407", "8995902", "8997806" .
+    "8814261", "8843407", "8995902", "8997806";
+  <http://example.com/cars#locatedIn> "Aurora", "Austin", "Greenville", "Janesville",
+    "Middletown", "Scottsdale" .
 
 <http://example.com/dealer/U-Haul%20CO> a <http://example.com/cars#Dealer>;
   <http://example.com/cars#dealerName> "U-Haul CO";
@@ -16531,7 +16719,9 @@
     "6871530", "6972050", "7025992", "7026144", "7298704", "7368875", "7400390", "7503900",
     "7539512", "7541816", "7580374", "7631462", "7691251", "7705516", "7774563", "7801790",
     "7805748", "8001444", "8047606", "8103828", "8235388", "8258579", "8266098", "8410862",
-    "8692179", "8769804", "8788287", "8827586", "8944331" .
+    "8692179", "8769804", "8788287", "8827586", "8944331";
+  <http://example.com/cars#locatedIn> "Aurora", "Austin", "Janesville", "Middletown",
+    "Pasco", "Scottsdale" .
 
 <http://example.com/engine/Double%C3%82%C2%A0Overhead%20Camshaft> a <http://example.com/cars#Engine> .
 

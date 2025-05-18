@@ -92,6 +92,9 @@
     rr:predicateObjectMap [ rr:predicate ex:dealerName ;
                             rr:objectMap [ rml:reference "Dealer_Name" ;
                                            rr:datatype   xsd:string ] ] ;
+    rr:predicateObjectMap [ rr:predicate ex:locatedIn ;
+                            rr:objectMap [ rml:reference "Dealer_Region" ;
+                                           rr:datatype   xsd:string ] ] ;
     rr:predicateObjectMap [ rr:predicate ex:dealerPhone ;
                             rr:objectMap [ rml:reference "Phone" ;
                                            rr:datatype   xsd:string ] ] ;
@@ -100,11 +103,13 @@
                                            rr:datatype   xsd:string ] ] .
 
 <#CarModelMapping>
-    a                 rr:TriplesMap ;
-    rml:logicalSource [ rml:source               "car_data.csv" ;
-                        rml:referenceFormulation ql:CSV ] ;
-    rr:subjectMap     [ rr:template "http://example.com/car_model/{Model}" ;
-                        rr:class    ex:CarModel ] .
+    a                     rr:TriplesMap ;
+    rml:logicalSource     [ rml:source               "car_data.csv" ;
+                            rml:referenceFormulation ql:CSV ] ;
+    rr:subjectMap         [ rr:template "http://example.com/car_model/{Model}" ;
+                            rr:class    ex:CarModel ] ;
+    rr:predicateObjectMap [ rr:predicate ex:hasCompany ;
+                            rr:objectMap [ rr:template "http://example.com/body_style/{Company}" ] ] .
 
 <#CarCompanyMapping>
     a                 rr:TriplesMap ;
