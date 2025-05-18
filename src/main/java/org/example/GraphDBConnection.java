@@ -31,8 +31,7 @@ public class GraphDBConnection {
             throw new RuntimeException(e);
         }
 
-        // Commiting the data to the repository
-        connection.commit();
+        connection.commit(); // Commiting the data to the repository
     }
 
     public static RepositoryConnection getCarSalesRepositoryConnection() {
