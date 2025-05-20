@@ -66,5 +66,9 @@ public class Utils {
         SPARQLQueryExecution.mostSoldCarModelPerCompany(); // Query the most sold car model per company
 
         SPARQLQueryExecution.totalRevenuePerDealerAndRegion(); // Query the total revenue per dealer and region
+
+        SPARQLQueryExecution.findTopFiveCompaniesWithTheMostSoldCars(); // Query that finds the top five companies with the most sold cars
+
+        SPARQLQueryExecution.countMaleAndFemaleCustomers(); // Query that count male and female customers
     }
 }

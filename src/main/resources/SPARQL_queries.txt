@@ -63,14 +63,31 @@ PREFIX ex: <http://example.com/cars#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-SELECT ?company ?model (COUNT(?car) AS ?sales)
-    WHERE {
-           ?car a ex:Car ;
-                ex:hasModel ?model .
-           ?model ex:hasCompany ?company .
-    }
+SELECT ?company ?model ?sales WHERE {
+{
+    SELECT ?company ?model (COUNT(?car) AS ?sales) WHERE {
+        ?car a ex:Car ;
+            ex:hasModel ?model ;
+            ex:manufacturedBy ?company .
+        ?model ex:hasCompany ?company .
+      }
     GROUP BY ?company ?model
-    ORDER BY ?company DESC(?sales)
+    }
+    FILTER NOT EXISTS {
+     {
+        SELECT ?company (COUNT(?car2) AS ?higherSales) WHERE {
+            ?car2 a ex:Car ;\n"
+                ex:hasModel ?otherModel ;
+                ex:manufacturedBy ?company .
+            ?otherModel ex:hasCompany ?company .
+            FILTER(?otherModel != ?model) \n"
+            }
+        GROUP BY ?company ?otherModel\n"
+        HAVING (?higherSales > ?sales)\n"
+     }
+   }
+}
+ORDER BY DESC(?sales)
 
 # ------------------------------------------------------------
 # Total revenue per dealer and region
@@ -90,3 +107,36 @@ SELECT ?dealer ?region (SUM(?price) AS ?totalRevenue)
     }
     GROUP BY ?dealer ?region
     ORDER BY DESC(?totalRevenue)
+
+# ------------------------------------------------------------
+# Find top 5 companies with the most sold cars
+# ------------------------------------------------------------
+
+PREFIX ex: <http://example.com/cars#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?company (COUNT(?car) AS ?totalSales)
+    WHERE {
+           ?car a ex:Car ;
+                ex:manufacturedBy ?company  .
+    }
+GROUP BY ?company
+ORDER BY DESC(?totalSales)
+LIMIT 5
+
+# ------------------------------------------------------------
+# Count male and female customers
+# ------------------------------------------------------------
+
+PREFIX ex: <http://example.com/cars#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?gender (COUNT(DISTINCT ?customer) AS ?totalCustomers)
+    WHERE {
+          ?customer a ex:Customer ;
+                ex:gender ?gender .
+    }
+GROUP BY ?gender
+ORDER BY DESC(?totalCustomers)

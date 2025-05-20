@@ -111,13 +111,31 @@ public class SPARQLQueryExecution {
 
     public static void mostSoldCarModelPerCompany() {
         String queryString = PREFIXES
+                + "SELECT ?company ?model ?sales WHERE {\n"
+                + "{\n"
                 + "SELECT ?company ?model (COUNT(?car) AS ?sales) WHERE {\n"
                 + "     ?car a ex:Car ; \n"
-                + "         ex:hasModel ?model .\n"
+                + "         ex:hasModel ?model ;\n"
+                + "         ex:manufacturedBy ?company .\n"
                 + "      ?model ex:hasCompany ?company .\n"
                 + "} \n"
                 + "GROUP BY ?company ?model\n"
-                + "ORDER BY ?company DESC(?sales)";
+                + "}\n"
+                + "FILTER NOT EXISTS {\n"
+                + "{\n"
+                + "SELECT ?company (COUNT(?car2) AS ?higherSales) WHERE {\n"
+                + "         ?car2 a ex:Car ;\n"
+                + "             ex:hasModel ?otherModel ;\n"
+                + "             ex:manufacturedBy ?company .\n"
+                + "          ?otherModel ex:hasCompany ?company . \n"
+                + "          FILTER(?otherModel != ?model) \n"
+                + "}\n"
+                + "          GROUP BY ?company ?otherModel\n"
+                + "          HAVING (?higherSales > ?sales)\n"
+                + "          }\n"
+                + "     }\n"
+                + "}\n"
+                + "ORDER BY DESC(?sales)";
 
         // Execute SPARQL query
         TupleQuery tupleQuery = GraphDBConnection.getCarSalesRepositoryConnection().prepareTupleQuery(QueryLanguage.SPARQL, queryString);
@@ -167,6 +185,65 @@ public class SPARQLQueryExecution {
                 System.out.println("Dealer name: " + dealer.stringValue());
                 System.out.println("Region of dealer: " + region.stringValue());
                 System.out.println("Total revenue of dealer: " + totalRevenue.stringValue());
+                System.out.println("---");
+            }
+        } catch (Exception e) {
+            GraphDBConnection.closeRepositoryConnection();
+        }
+    }
+
+    public static void findTopFiveCompaniesWithTheMostSoldCars() {
+        String queryString = PREFIXES
+                + "SELECT ?company (COUNT(?car) AS ?totalSales) WHERE {\n"
+                + "     ?car a ex:Car ; \n"
+                + "         ex:manufacturedBy ?company  .\n"
+                + "} \n"
+                + "GROUP BY ?company \n"
+                + "ORDER BY DESC(?totalSales)"
+                + "LIMIT 5";
+
+        // Execute SPARQL query
+        TupleQuery tupleQuery = GraphDBConnection.getCarSalesRepositoryConnection().prepareTupleQuery(QueryLanguage.SPARQL, queryString);
+
+        System.out.println("=====================================\n");
+
+        try (TupleQueryResult result = tupleQuery.evaluate()) {
+            while (result.hasNext()) {
+                BindingSet bindSet = result.next();
+                Value company = bindSet.getValue("company");
+                Value totalSales = bindSet.getValue("totalSales");
+
+                System.out.println("Company: " + company.stringValue());
+                System.out.println("Total sales: " + totalSales.stringValue());
+                System.out.println("---");
+            }
+        } catch (Exception e) {
+            GraphDBConnection.closeRepositoryConnection();
+        }
+    }
+
+    public static void countMaleAndFemaleCustomers() {
+        String queryString = PREFIXES
+                + "SELECT ?gender (COUNT(DISTINCT ?customer) AS ?totalCustomers) WHERE {\n"
+                + "     ?customer a ex:Customer ;\n"
+                + "         ex:gender ?gender .\n"
+                + "} \n"
+                + "GROUP BY ?gender \n"
+                + "ORDER BY DESC(?totalCustomers)";
+
+        // Execute SPARQL query
+        TupleQuery tupleQuery = GraphDBConnection.getCarSalesRepositoryConnection().prepareTupleQuery(QueryLanguage.SPARQL, queryString);
+
+        System.out.println("=====================================\n");
+
+        try (TupleQueryResult result = tupleQuery.evaluate()) {
+            while (result.hasNext()) {
+                BindingSet bindSet = result.next();
+                Value gender = bindSet.getValue("gender");
+                Value totalCustomers = bindSet.getValue("totalCustomers");
+
+                System.out.println("Gender: " + gender.stringValue());
+                System.out.println("Total customers: " + totalCustomers.stringValue());
                 System.out.println("---");
             }
         } catch (Exception e) {
