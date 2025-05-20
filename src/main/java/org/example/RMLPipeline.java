@@ -12,12 +12,14 @@ public final class RMLPipeline {
     public static void main(String[] args) throws IOException {
         GraphDBConnection.initializeRepository(); // Initializes the connection to the GraphDB repository
 
-        GraphDBConnection.addRDFFileToGraphDB(convertedCarOntology); // Insert the owl intology (converted to Turtle format) file into the repository
+        GraphDBConnection.addRDFFileToGraphDB(convertedCarOntology); // Insert the owl ontology (converted to Turtle format) file into the repository
 
         Utils.executeRMLMapper(mappingPathFile, rmlRulesMappingsOutput); // Execute RML pipeline to apply RML rules on car sales dataset
 
         GraphDBConnection.addRDFFileToGraphDB(rmlRulesMappingsOutput); // Insert output file after mapping RLM rules on car sales dataset into the repository
 
-        GraphDBConnection.closeRepositoryConnection(); // close the connection wtih the repository in GraphDB
+        Utils.executePipelineOfSPARQLQueries(); // Execute pipeline of SPARQL queries
+
+        GraphDBConnection.closeRepositoryConnection(); // close the connection of the repository in GraphDB
     }
 }

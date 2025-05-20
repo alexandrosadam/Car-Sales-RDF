@@ -1,71 +1,92 @@
 # ------------------------------------------------------------
-# Show all Ford cars sold
+# Total sales per dealer
 # ------------------------------------------------------------
 
 PREFIX ex: <http://example.com/cars#>
-
-SELECT ?car ?carId ?saleDate ?price
-WHERE {
-  ?car a ex:Car ;
-       ex:carId ?carId ;
-       ex:saleDate ?saleDate ;
-       ex:priceUSD ?price ;
-       ex:hasModel ?model .
-
-  ?model ex:hasCompany <http://example.com/car_company/Ford> .
-}
-
-# ------------------------------------------------------------
-# Total sales($) per dealer
-# ------------------------------------------------------------
-
-PREFIX ex: <http://example.com/cars#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 SELECT ?dealer ?dealerName (SUM(?price) AS ?totalSalesUSD)
-WHERE {
-  ?car a ex:Car ;
-       ex:soldBy ?dealer ;
-       ex:priceUSD ?price .
+        WHERE {
+            ?car a ex:Car ;
+                ex:soldBy ?dealer ;
+                ex:priceUSD ?price .
+            ?dealer ex:dealerName ?dealerName .
+        }
+        GROUP BY ?dealer ?dealerName \n"
+        ORDER BY DESC(?totalSalesUSD)";
 
-  ?dealer ex:dealerName ?dealerName .
-}
-GROUP BY ?dealer ?dealerName
-ORDER BY DESC(?totalSalesUSD)
-
-# ------------------------------------------------------------
-# Show the top 3 Dealer Regions that sold the most SUV cars
-# ------------------------------------------------------------
-
-PREFIX ex: <http://example.com/cars#>
-
-SELECT ?region (COUNT(?car) AS ?suvCount)
-WHERE {
-  ?car a ex:Car ;
-       ex:hasBodyStyle ?bodyStyle ;
-       ex:soldBy ?dealer .
-
-  ?bodyStyle a ex:BodyStyle .
-  FILTER(CONTAINS(LCASE(STR(?bodyStyle)), "suv"))
-
-  ?dealer ex:locatedIn ?region .
-}
-GROUP BY ?region
-ORDER BY DESC(?suvCount)
-LIMIT 3
 
 # ------------------------------------------------------------
-# Count the Manual vs Automatic cars sold per Dealer
+# Count manual and automatic cars per dealer
 # ------------------------------------------------------------
 
 PREFIX ex: <http://example.com/cars#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-SELECT ?dealer 
-       (SUM(IF(LCASE(STRAFTER(STR(?transmission), "transmission/")) = "automatic", 1, 0)) AS ?AutoCarCount)
-       (SUM(IF(LCASE(STRAFTER(STR(?transmission), "transmission/")) = "manual", 1, 0)) AS ?ManualCarCount)
-WHERE {
-  ?car a ex:Car ;
-       ex:soldBy ?dealer ;
-       ex:hasTransmission ?transmission .
-}
-GROUP BY ?dealer
-ORDER BY DESC(?AutoCarCount)
+SELECT ?dealer
+        (SUM(IF(LCASE(STRAFTER(STR(?transmission), \"transmission/\")) = \"auto\", 1, 0)) AS ?AutoCarCount)
+        (SUM(IF(LCASE(STRAFTER(STR(?transmission), \"transmission/\")) = \"manual\", 1, 0)) AS ?ManualCarCount)
+    WHERE {
+          ?car a ex:Car ;
+               ex:soldBy ?dealer ;
+               ex:hasTransmission ?transmission .
+    }
+    GROUP BY ?dealer;
+
+# ------------------------------------------------------------
+# Total sales and average price of sold car per company
+# ------------------------------------------------------------
+
+PREFIX ex: <http://example.com/cars#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?company (COUNT(?car) AS ?totalSales) (AVG(?price) AS ?averagePrice)
+    WHERE {
+           ?car a ex:Car ;
+                ex:hasModel ?model ;
+                ex:priceUSD ?price .
+           ?model a ex:CarModel ;
+                ex:hasCompany ?company .
+    }
+    GROUP BY ?company
+    ORDER BY DESC(?totalSales)
+
+
+# ------------------------------------------------------------
+# Most sold car model per company
+# ------------------------------------------------------------
+
+PREFIX ex: <http://example.com/cars#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?company ?model (COUNT(?car) AS ?sales)
+    WHERE {
+           ?car a ex:Car ;
+                ex:hasModel ?model .
+           ?model ex:hasCompany ?company .
+    }
+    GROUP BY ?company ?model
+    ORDER BY ?company DESC(?sales)
+
+# ------------------------------------------------------------
+# Total revenue per dealer and region
+# ------------------------------------------------------------
+
+PREFIX ex: <http://example.com/cars#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?dealer ?region (SUM(?price) AS ?totalRevenue)
+    WHERE {
+           ?car a ex:Car ;
+                ex:priceUSD ?price ;
+                ex:soldBy ?dealer .
+           ?dealer ex:dealerName ?dealerName ;
+                ex:locatedIn ?region .
+    }
+    GROUP BY ?dealer ?region
+    ORDER BY DESC(?totalRevenue)

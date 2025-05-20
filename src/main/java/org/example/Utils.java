@@ -55,4 +55,16 @@ public class Utils {
             throw new RuntimeException(e);
         }
     }
+
+    public static void executePipelineOfSPARQLQueries() {
+        SPARQLQueryExecution.totalSalesPerDealer(); // Query the total sales per dealer
+
+        SPARQLQueryExecution.countManualAndAutomaticPerDealer(); // Query the total number of manual and automatic cars per dealer
+
+        SPARQLQueryExecution.totalSalesAndAveragePricePerCompany(); // Query the total sales and average car price per company
+
+        SPARQLQueryExecution.mostSoldCarModelPerCompany(); // Query the most sold car model per company
+
+        SPARQLQueryExecution.totalRevenuePerDealerAndRegion(); // Query the total revenue per dealer and region
+    }
 }
