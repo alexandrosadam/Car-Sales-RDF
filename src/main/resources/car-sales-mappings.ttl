@@ -51,15 +51,9 @@
     rr:predicateObjectMap [ rr:predicate ex:customerName ;
                             rr:objectMap [ rml:reference "Customer Name" ;
                                            rr:datatype   xsd:string ] ] ;
-    rr:predicateObjectMap [ rr:predicate ex:customerName ;
-                            rr:objectMap [ rml:reference "Customer Name" ;
-                                           rr:datatype   xsd:string ] ] ;
     rr:predicateObjectMap [ rr:predicate ex:gender ;
                             rr:objectMap [ rml:reference "Gender" ;
                                            rr:datatype   xsd:string ] ] ;
-    rr:predicateObjectMap [ rr:predicate ex:annualIncome ;
-                            rr:objectMap [ rml:reference "Annual Income" ;
-                                           rr:datatype   xsd:float ] ] ;
     rr:predicateObjectMap [ rr:predicate ex:annualIncome ;
                             rr:objectMap [ rml:reference "Annual Income" ;
                                            rr:datatype   xsd:float ] ] .
