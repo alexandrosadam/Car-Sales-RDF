@@ -14,7 +14,9 @@ public class SPARQLQueryExecution {
     public static void totalSalesPerDealer() {
         String queryString = PREFIXES
                 + "SELECT ?dealer ?dealerName (SUM(?price) AS ?totalSalesUSD) WHERE { \n"
-                + "?car a ex:Car ;  ex:soldBy ?dealer ;  ex:priceUSD ?price . \n"
+                + "?car a ex:Car ;\n"
+                + "     ex:soldBy ?dealer ; \n"
+                + "     ex:priceUSD ?price . \n"
                 + "?dealer ex:dealerName ?dealerName . } \n"
                 + "GROUP BY ?dealer ?dealerName \n"
                 + "ORDER BY DESC(?totalSalesUSD)";
@@ -30,9 +32,9 @@ public class SPARQLQueryExecution {
                 Value totalSales = bindSet.getValue("totalSalesUSD");
 
                 System.out.println("Dealer: " + dealer.stringValue());
-                System.out.println("Name: " + dealerName.stringValue());
+                System.out.println("Dealer name: " + dealerName.stringValue());
                 System.out.println("Total Sales (USD): " + totalSales.stringValue());
-                System.out.println("---");
+                System.out.println("=========================================");
             }
         } catch (Exception e) {
             GraphDBConnection.closeRepositoryConnection();
@@ -76,7 +78,7 @@ public class SPARQLQueryExecution {
 
     public static void totalSalesAndAveragePricePerCompany() {
         String queryString = PREFIXES
-                + "SELECT ?company (COUNT(?car) AS ?totalSales) (AVG(?price) AS ?averagePrice) WHERE {\n"
+                + "SELECT ?company (COUNT(?car) AS ?totalSales) (ROUND(AVG(xsd:integer(?price))) AS ?averagePrice) WHERE {\n"
                 + "     ?car a ex:Car ;\n"
                 + "         ex:hasModel ?model ;\n"
                 + "         ex:priceUSD ?price .\n"
@@ -97,12 +99,11 @@ public class SPARQLQueryExecution {
                 Value company = bindSet.getValue("company");
                 Value totalSales = bindSet.getValue("totalSales");
                 Value averagePrice = bindSet.getValue("averagePrice");
-                //   Value averagePrice = bindSet.getValue("averagePrice");
 
                 System.out.println("Company: " + company.stringValue());
                 System.out.println("Average price of sold car: " + averagePrice.stringValue());
                 System.out.println("Total sales: " + totalSales.stringValue());
-                System.out.println("---");
+                System.out.println("=========================================");
             }
         } catch (Exception e) {
             GraphDBConnection.closeRepositoryConnection();
@@ -152,23 +153,25 @@ public class SPARQLQueryExecution {
                 System.out.println("Company: " + company.stringValue());
                 System.out.println("Most sold model: " + model.stringValue());
                 System.out.println("Total sales: " + sales.stringValue());
-                System.out.println("---");
+                System.out.println("=====================================\n");
             }
         } catch (Exception e) {
             GraphDBConnection.closeRepositoryConnection();
         }
     }
 
-    public static void totalRevenuePerDealerAndRegion() {
+    public static void totalRevenuePerDealerAndRegions() {
         String queryString = PREFIXES
-                + "SELECT ?dealer ?region (SUM(?price) AS ?totalRevenue) WHERE {\n"
+                + "SELECT ?dealer ?dealerName \n"
+                + "     (GROUP_CONCAT(DISTINCT ?region; separator=\", \") AS ?regions)"
+                + "     (SUM(xsd:integer(?price)) AS ?totalRevenue) WHERE {\n"
                 + "     ?car a ex:Car ; \n"
                 + "       ex:priceUSD ?price ;\n"
                 + "       ex:soldBy ?dealer .\n"
                 + "  ?dealer ex:dealerName ?dealerName ;\n"
                 + "          ex:locatedIn ?region .\n"
                 + "} \n"
-                + "GROUP BY ?dealer ?region\n"
+                + "GROUP BY ?dealer ?dealerName\n"
                 + "ORDER BY DESC(?totalRevenue)";
 
         // Execute SPARQL query
@@ -179,13 +182,15 @@ public class SPARQLQueryExecution {
             while (result.hasNext()) {
                 BindingSet bindSet = result.next();
                 Value dealer = bindSet.getValue("dealer");
-                Value region = bindSet.getValue("region");
+                Value dealerName = bindSet.getValue("dealerName");
+                Value regions = bindSet.getValue("regions");
                 Value totalRevenue = bindSet.getValue("totalRevenue");
 
-                System.out.println("Dealer name: " + dealer.stringValue());
-                System.out.println("Region of dealer: " + region.stringValue());
+                System.out.println("Dealer: " + dealer.stringValue());
+                System.out.println("Dealer name: " + dealerName.stringValue());
+                System.out.println("Regions: " + regions.stringValue());
                 System.out.println("Total revenue of dealer: " + totalRevenue.stringValue());
-                System.out.println("---");
+                System.out.println("=====================================\n");
             }
         } catch (Exception e) {
             GraphDBConnection.closeRepositoryConnection();
@@ -215,7 +220,7 @@ public class SPARQLQueryExecution {
 
                 System.out.println("Company: " + company.stringValue());
                 System.out.println("Total sales: " + totalSales.stringValue());
-                System.out.println("---");
+                System.out.println("=====================================\n");
             }
         } catch (Exception e) {
             GraphDBConnection.closeRepositoryConnection();
@@ -244,7 +249,7 @@ public class SPARQLQueryExecution {
 
                 System.out.println("Gender: " + gender.stringValue());
                 System.out.println("Total customers: " + totalCustomers.stringValue());
-                System.out.println("---");
+                System.out.println("=====================================\n");
             }
         } catch (Exception e) {
             GraphDBConnection.closeRepositoryConnection();

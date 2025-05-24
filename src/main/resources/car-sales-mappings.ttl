@@ -31,7 +31,7 @@
     rr:predicateObjectMap [ rr:predicate ex:hasBodyStyle ;
                             rr:objectMap [ rr:template "http://example.com/body_style/{Body Style}" ] ] ;
     rr:predicateObjectMap [ rr:predicate ex:manufacturedBy ;
-                            rr:objectMap [ rr:template "http://example.com/body_style/{Company}" ] ] ;
+                            rr:objectMap [ rr:template "http://example.com/car_company/{Company}" ] ] ;
     rr:predicateObjectMap [ rr:predicate ex:carId ;
                             rr:objectMap [ rml:reference "Car_id" ;
                                            rr:datatype   xsd:string ] ] ;
@@ -105,7 +105,7 @@
     rr:subjectMap         [ rr:template "http://example.com/car_model/{Model}" ;
                             rr:class    ex:CarModel ] ;
     rr:predicateObjectMap [ rr:predicate ex:hasCompany ;
-                            rr:objectMap [ rr:template "http://example.com/body_style/{Company}" ] ] .
+                            rr:objectMap [ rr:template "http://example.com/car_company/{Company}" ] ] .
 
 <#CarCompanyMapping>
     a                 rr:TriplesMap ;

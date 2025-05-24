@@ -13,8 +13,8 @@ SELECT ?dealer ?dealerName (SUM(?price) AS ?totalSalesUSD)
                 ex:priceUSD ?price .
             ?dealer ex:dealerName ?dealerName .
         }
-        GROUP BY ?dealer ?dealerName \n"
-        ORDER BY DESC(?totalSalesUSD)";
+        GROUP BY ?dealer ?dealerName
+        ORDER BY DESC(?totalSalesUSD);
 
 
 # ------------------------------------------------------------
@@ -43,7 +43,7 @@ PREFIX ex: <http://example.com/cars#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-SELECT ?company (COUNT(?car) AS ?totalSales) (AVG(?price) AS ?averagePrice)
+SELECT ?company (COUNT(?car) AS ?totalSales) (ROUND(AVG(xsd:integer(?price))) AS ?averagePrice)
     WHERE {
            ?car a ex:Car ;
                 ex:hasModel ?model ;
@@ -90,14 +90,16 @@ SELECT ?company ?model ?sales WHERE {
 ORDER BY DESC(?sales)
 
 # ------------------------------------------------------------
-# Total revenue per dealer and region
+# Total revenue per dealer and regions
 # ------------------------------------------------------------
 
 PREFIX ex: <http://example.com/cars#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-SELECT ?dealer ?region (SUM(?price) AS ?totalRevenue)
+SELECT ?dealer ?dealerName
+   (GROUP_CONCAT(DISTINCT ?region; separator=", ") AS ?regions)
+   (SUM(xsd:integer(?price)) AS ?totalRevenue)
     WHERE {
            ?car a ex:Car ;
                 ex:priceUSD ?price ;
@@ -105,7 +107,7 @@ SELECT ?dealer ?region (SUM(?price) AS ?totalRevenue)
            ?dealer ex:dealerName ?dealerName ;
                 ex:locatedIn ?region .
     }
-    GROUP BY ?dealer ?region
+    GROUP BY ?dealer ?dealerName
     ORDER BY DESC(?totalRevenue)
 
 # ------------------------------------------------------------
