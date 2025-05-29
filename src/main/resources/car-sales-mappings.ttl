@@ -89,8 +89,7 @@
                             rr:objectMap [ rml:reference "Dealer_Name" ;
                                            rr:datatype   xsd:string ] ] ;
     rr:predicateObjectMap [ rr:predicate ex:locatedIn ;
-                            rr:objectMap [ rml:reference "Dealer_Region" ;
-                                           rr:datatype   xsd:string ] ] ;
+                            rr:objectMap [ rr:template "http://example.com/region/{Dealer_Region}" ] ];
     rr:predicateObjectMap [ rr:predicate ex:dealerPhone ;
                             rr:objectMap [ rml:reference "Phone" ;
                                            rr:datatype   xsd:string ] ] ;
@@ -127,6 +126,9 @@
                         rml:referenceFormulation ql:CSV ] ;
     rr:subjectMap     [ rr:template "http://example.com/region/{Dealer_Region}" ;
                         rr:class    ex:Region ] .
+    rr:predicateObjectMap [ rr:predicate ex:regionName ;
+                            rr:objectMap [ rml:reference "Dealer_Region" ;
+                                           rr:datatype   xsd:string ] ] ;
 
 
 
